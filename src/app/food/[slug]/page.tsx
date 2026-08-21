@@ -1,6 +1,11 @@
+// input: params.slug (单品路由参数)
+// output: 69 种果蔬单品深度评级与 SEO 页面（含 3 秒购买结论、清洗指南、官方实验室检测数据与同类推荐）
+// pos: 网站长尾流量承接与核心转化落地页（更新规则：文件变更需同步本注释与所属目录 README）
+
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { FoodVisual } from "@/components/FoodVisual";
 import { getAllFoods, getFoodBySlug, getSource } from "@/lib/data";
 import {
   buyingVerdict,
@@ -25,7 +30,7 @@ export async function generateMetadata({
   const verdict = buyingVerdict(food);
 
   return {
-    title: `${food.name} Pesticide Load & Organic Buying Guide (2026)`,
+    title: `${food.name} Pesticide Load & Organic Buying Guide (2026) | Pesticide Guide`,
     description: `${food.name} has a pesticide score of ${food.score}/100. ${verdict.recommendation} View official residue tests, chemical drivers, and washing guide.`,
     alternates: { canonical: `/food/${slugifyFood(food.name)}` },
     openGraph: {
@@ -74,7 +79,7 @@ export default async function FoodPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(datasetSchema).replace(/</g, "\u003c"),
+          __html: JSON.stringify(datasetSchema).replace(/</g, "\\u003c"),
         }}
       />
 
@@ -89,7 +94,7 @@ export default async function FoodPage({
       {/* Hero Header */}
       <header className="food-hero">
         <span className="food-hero-emoji" aria-hidden="true">
-          {food.emoji}
+          <FoodVisual emoji={food.emoji} name={food.name} size={64} />
         </span>
         <div className="food-hero-details">
           <div className="food-hero-eyebrows">
@@ -295,7 +300,9 @@ export default async function FoodPage({
             const v = buyingVerdict(item);
             return (
               <Link href={`/food/${slugifyFood(item.name)}`} key={item.code} className="peer-link-card">
-                <span aria-hidden="true" className="peer-emoji">{item.emoji}</span>
+                <span aria-hidden="true" className="peer-emoji">
+                  <FoodVisual emoji={item.emoji} name={item.name} size={28} />
+                </span>
                 <div>
                   <strong>{item.name}</strong>
                   <small className={`verdict-text verdict-${v.tone}`}>Load {item.score} · {v.badge}</small>

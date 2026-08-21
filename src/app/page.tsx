@@ -4,6 +4,7 @@
 
 import Link from "next/link";
 import { FoodExplorer } from "@/components/FoodExplorer";
+import { FoodVisual } from "@/components/FoodVisual";
 import { getAllFoods, getExplorerFoods, getSnapshot } from "@/lib/data";
 import { buyingVerdict, slugifyFood } from "@/lib/food";
 
@@ -269,7 +270,7 @@ export default function HomePage() {
                 href={`/food/${slugifyFood(food.name)}`}
                 key={food.code}
               >
-                <span className="food-index-emoji" aria-hidden="true">{food.emoji}</span>
+                <FoodVisual className="food-index-visual" emoji={food.emoji} name={food.name} size={30} />
                 <div className="food-index-meta">
                   <strong>{food.name}</strong>
                   <div className="food-index-badges">

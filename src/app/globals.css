@@ -1604,3 +1604,19 @@ thead th {
   }
 }
 
+
+
+.food-artwork-img {
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 4px 6px rgba(47, 39, 29, 0.16));
+  pointer-events: none;
+  user-select: none;
+}
+
+.produce-point-btn:hover .food-artwork-img,
+.produce-point-btn:focus-visible .food-artwork-img,
+.produce-point-btn[data-selected="true"] .food-artwork-img {
+  transform: translateY(-4px) scale(1.22);
+}
+

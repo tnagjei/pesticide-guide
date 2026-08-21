@@ -5,11 +5,13 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { FoodVisual } from "@/components/FoodVisual";
 import {
   buyingVerdict,
   confidenceLevel,
   filterFoods,
   layoutFoods,
+  longevityScore,
   marketFood,
   slugifyFood,
 } from "@/lib/food";
@@ -167,14 +169,16 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
               style={{ "--pt-x": `${x}%`, "--pt-y": `${y}%` } as React.CSSProperties}
             >
               <button
-                aria-label={`${food.name}: pesticide load ${food.score} out of 100, Food Compass ${food.healthSourceScore} out of 100`}
+                aria-label={`${food.name}: pesticide load ${food.score} out of 100, Longevity Score ${longevityScore(food)} out of 100`}
                 className="produce-point-btn"
                 data-confidence={confidenceLevel(food)}
                 data-selected={selectedCode === food.code}
                 onClick={() => setSelectedCode(food.code)}
                 type="button"
               >
-                <span className="produce-visual" aria-hidden="true">{food.emoji}</span>
+                <span className="produce-visual" aria-hidden="true">
+                  <FoodVisual emoji={food.emoji} name={food.name} size={32} />
+                </span>
                 <span className="produce-tooltip-name">{food.name}</span>
               </button>
             </li>
@@ -219,7 +223,9 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
 
             {/* Hero Header */}
             <div className="drawer-hero-section">
-              <span className="drawer-emoji-box" aria-hidden="true">{selected.emoji}</span>
+              <span className="drawer-emoji-box" aria-hidden="true">
+                <FoodVisual emoji={selected.emoji} name={selected.name} size={58} />
+              </span>
               <div className="drawer-hero-text">
                 <span className="drawer-cat-pill">{selected.category} · {market.country}</span>
                 <h2 id="drawer-title">{selected.name}</h2>
@@ -241,7 +247,7 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
               </div>
               <div className="m-card">
                 <span className="m-card-label">Longevity Score</span>
-                <strong className="m-card-val">{selected.healthSourceScore}</strong>
+                <strong className="m-card-val">{longevityScore(selected)}</strong>
                 <small className="m-card-hint">Food Compass 2.0</small>
               </div>
               <div className="m-card">
