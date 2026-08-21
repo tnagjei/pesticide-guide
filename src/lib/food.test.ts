@@ -1,3 +1,7 @@
+// input: food.ts 中的算法函数与测试样本
+// output: 农残清洁度、相对长寿分、购买决策与布局算法自动化单元测试套件
+// pos: 算法质量保障与回归验证（更新规则：文件变更需同步本注释与所属目录 README）
+
 import { describe, expect, it } from "vitest";
 import {
   buyingVerdict,
@@ -7,6 +11,7 @@ import {
   foodDescription,
   getRankings,
   layoutFoods,
+  longevityScore,
   slugifyFood,
 } from "./food";
 import type { Food } from "./types";
@@ -56,6 +61,11 @@ describe("food helpers", () => {
     expect(cleanlinessScore(foods[0])).toBe(34);
   });
 
+  it("calculates calibrated produce longevity scores", () => {
+    expect(longevityScore({ name: "Broccoli", healthSourceScore: 100 })).toBe(100);
+    expect(longevityScore({ name: "Potatoes", healthSourceScore: 57 })).toBe(12);
+  });
+
   it("labels evidence without hiding sparse data", () => {
     expect(confidenceLevel(foods[0])).toBe("High");
     expect(confidenceLevel(foods[1])).toBe("Limited");
@@ -78,7 +88,7 @@ describe("food helpers", () => {
     expect(filterFoods(foods, "", "us")).toEqual([foods[0]]);
   });
 
-  it("lays out every food inside the chart", () => {
+  it("lays out every food inside the chart across quadrants", () => {
     const points = layoutFoods(foods);
     expect(points).toHaveLength(3);
     expect(points.every(({ x, y }) => x >= 6 && x <= 94 && y >= 8 && y <= 92)).toBe(true);

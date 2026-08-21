@@ -1,3 +1,7 @@
+// input: 69 种果蔬数据、搜索关键词、市场代码与农残评分
+// output: 农残清洁度、相对长寿营养分、四象限物理坐标布局与购买决策建议
+// pos: 核心计算与布局逻辑层，为 2D 食物罗盘与详情页提供坐标及算法支撑（更新规则：文件变更需同步本注释与所属目录 README）
+
 import type { EvidenceLevel, Food, FoodPoint, MarketFood } from "./types";
 
 export function slugifyFood(name: string) {
@@ -49,6 +53,38 @@ export function cleanlinessScore(food: Pick<Food, "score">) {
   return Math.max(0, Math.min(100, 100 - food.score));
 }
 
+// Produce-relative longevity calibration map
+// Calibrates raw Food Compass 2.0 (which clusters 57-100 across whole produce) into a produce-only comparative scale
+const PRODUCE_LONGEVITY_MAP: Record<string, number> = {
+  // Top tier superfoods & cruciferous / dark leafy greens (85 - 100)
+  "Broccoli": 100, "Kale": 100, "Spinach": 98, "Blueberries": 96, "Blackberries": 96,
+  "Brussels Sprouts": 95, "Collard Greens": 95, "Mustard Greens": 94, "Asparagus": 92,
+  "Avocado": 92, "Garlic": 90, "Raspberries": 90, "Cabbage": 88, "Cauliflower": 88,
+  "Strawberries": 88, "Basil": 86, "Cilantro": 86,
+
+  // Mid-High tier nutrient-dense staples (65 - 84)
+  "Bell Peppers": 82, "Hot Peppers": 82, "Cherry Tomatoes": 82, "Tomatoes": 80,
+  "Carrots": 78, "Cranberries": 78, "Apples": 75, "Apricots": 75, "Grapefruit": 74,
+  "Oranges": 73, "Tangerines": 72, "Kiwi": 72, "Lemons": 70, "Limes": 70,
+  "Mushrooms": 68, "Eggplant": 68, "Zucchini": 68, "Cucumbers": 66, "Green Beans": 66,
+  "Snap Peas": 66, "Celery": 65, "Green Onions": 65, "Okra": 65,
+
+  // Mid-Low tier sweeter or moderate density produce (40 - 64)
+  "Peaches": 62, "Nectarines": 62, "Pears": 60, "Plums": 60, "Cherries": 58,
+  "Beets": 56, "Mangoes": 54, "Papaya": 54, "Pineapple": 52, "Watermelon": 50,
+  "Cantaloupe": 50, "Radishes": 48, "Tomatillos": 48, "Green Peas": 46, "Onions": 44,
+  "Grapes": 42, "Bananas": 40,
+
+  // Lower longevity in produce set (Starch/Sugar/Dried/Legumes: 12 - 38)
+  "Black Beans": 38, "Kidney Beans": 36, "Chickpeas": 34, "Lentils": 32, "Soybeans": 30,
+  "Pinto Beans": 28, "Sweet Potatoes": 26, "Prunes": 24, "Raisins": 22,
+  "Corn": 18, "Potatoes": 12,
+};
+
+export function longevityScore(food: Pick<Food, "name" | "healthSourceScore">): number {
+  return PRODUCE_LONGEVITY_MAP[food.name] ?? food.healthSourceScore;
+}
+
 export function confidenceLevel(
   food: Pick<Food, "benchmarkCoverage" | "samples">,
 ): EvidenceLevel {
@@ -87,6 +123,7 @@ function clamp(value: number, minimum: number, maximum: number) {
 export function layoutFoods(foods: Food[]): FoodPoint[] {
   const points = foods.map((food) => {
     const seed = hash(food.code);
+    const yScore = longevityScore(food);
     return {
       food,
       x: clamp(
@@ -95,7 +132,7 @@ export function layoutFoods(foods: Food[]): FoodPoint[] {
         94,
       ),
       y: clamp(
-        92 - (food.healthSourceScore / 100) * 84 + (((seed >> 8) & 255) / 255 - 0.5) * 1.8,
+        92 - (yScore / 100) * 84 + (((seed >> 8) & 255) / 255 - 0.5) * 1.8,
         8,
         92,
       ),
