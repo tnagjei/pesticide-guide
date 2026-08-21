@@ -6,4 +6,5 @@ coverage/
 .DS_Store
 .env*
 *.tsbuildinfo
-
+.gsc.json
+seo-input/
