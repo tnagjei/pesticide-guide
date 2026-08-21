@@ -5,7 +5,7 @@ import { slugifyFood } from "@/lib/food";
 const baseUrl = "https://pesticideguide.online";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/methodology", "/sources", "/about", "/disclaimer"];
+  const staticRoutes = ["", "/methodology", "/sources", "/about", "/disclaimer", "/privacy", "/terms", "/contact"];
   return [
     ...staticRoutes.map((route) => ({
       url: `${baseUrl}${route}`,

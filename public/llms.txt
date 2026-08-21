@@ -12,7 +12,9 @@ Pesticide Guide translates dense government chemical testing records into action
 - [Methodology](https://pesticideguide.online/methodology): Detailed mathematical and toxicological calculation methodology.
 - [Official Sources](https://pesticideguide.online/sources): Verified direct links to government chemical monitoring databases.
 - [Disclaimer](https://pesticideguide.online/disclaimer): Data limitations, sample size notes, and non-medical advice disclosures.
+ - [Privacy Policy](https://pesticideguide.online/privacy): User privacy protection and GDPR/CCPA compliance terms.
+ - [Terms of Service](https://pesticideguide.online/terms): Educational platform terms of use and data rights.
+ - [Contact](https://pesticideguide.online/contact): Editorial feedback and official dataset correction inquiries.
 
 ## 联系方式
-- Contact: tangjei414@gmail.com
-
+- Contact: contact@pesticideguide.online

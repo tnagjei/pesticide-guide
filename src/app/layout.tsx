@@ -55,22 +55,28 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
-        <footer className="site-footer">
-          <div>
-            <strong>Pesticide Guide</strong>
-            <p>Public monitoring data, made easier to inspect.</p>
-            <p style={{ fontSize: "12px", opacity: 0.6, marginTop: "6px" }}>
-              © {new Date().getFullYear()} Pesticide Guide · Contact: tangjei414@gmail.com
-            </p>
-          </div>
-          <nav aria-label="Footer navigation">
-            <Link href="/methodology">Methodology</Link>
-            <Link href="/sources">Sources</Link>
-            <Link href="/disclaimer">Disclaimer</Link>
-          </nav>
-        </footer>
+       <footer className="site-footer">
+         <div>
+           <strong>Pesticide Guide</strong>
+           <p>Public monitoring data, made easier to inspect.</p>
+           <p style={{ fontSize: "12px", opacity: 0.6, marginTop: "6px" }}>
+              © {new Date().getFullYear()} Pesticide Guide · Contact:{" "}
+              <a href="mailto:contact@pesticideguide.online" style={{ color: "inherit", textDecoration: "underline" }}>
+                contact@pesticideguide.online
+              </a>
+           </p>
+         </div>
+         <nav aria-label="Footer navigation">
+           <Link href="/methodology">Methodology</Link>
+           <Link href="/sources">Sources</Link>
+           <Link href="/about">About</Link>
+           <Link href="/privacy">Privacy</Link>
+           <Link href="/terms">Terms</Link>
+           <Link href="/contact">Contact</Link>
+           <Link href="/disclaimer">Disclaimer</Link>
+         </nav>
+       </footer>
       </body>
     </html>
   );
 }
-

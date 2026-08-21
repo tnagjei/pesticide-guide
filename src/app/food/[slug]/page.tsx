@@ -27,11 +27,13 @@ export async function generateMetadata({
   const food = getFoodBySlug((await params).slug);
   if (!food) return {};
 
-  const verdict = buyingVerdict(food);
+ const verdict = buyingVerdict(food);
 
-  return {
-    title: `${food.name} Pesticide Load & Organic Buying Guide (2026) | Pesticide Guide`,
-    description: `${food.name} has a pesticide score of ${food.score}/100. ${verdict.recommendation} View official residue tests, chemical drivers, and washing guide.`,
+ return {
+    title: {
+      absolute: `${food.name} Pesticide Residue & Buying Guide (2026)`,
+    },
+    description: `Official lab data for ${food.name.toLowerCase()}: pesticide score ${food.score}/100. ${verdict.recommendation} See tested chemicals and washing steps.`,
     alternates: { canonical: `/food/${slugifyFood(food.name)}` },
     openGraph: {
       title: `${food.name} Pesticide Residue & Nutrition Data`,
@@ -64,11 +66,36 @@ export default async function FoodPage({
     description: foodDescription(food),
     dateModified: "2026-08-20",
     creator: { "@type": "Organization", name: "Pesticide Guide" },
-    variableMeasured: [
-      "Pesticide load score",
-      "Pesticide detection rate",
-      "Benchmark coverage",
-      "Food Compass 2.0 score",
+   variableMeasured: [
+     "Pesticide load score",
+     "Pesticide detection rate",
+     "Benchmark coverage",
+     "Food Compass 2.0 score",
+   ],
+ };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Produce Atlas",
+        item: "https://pesticideguide.online",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: `${food.category.charAt(0).toUpperCase() + food.category.slice(1)}s`,
+        item: "https://pesticideguide.online/#explorer",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: food.name,
+        item: `https://pesticideguide.online/food/${slugifyFood(food.name)}`,
+      },
     ],
   };
 
@@ -76,6 +103,12 @@ export default async function FoodPage({
 
   return (
     <main className="content-page food-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\u003c"),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -315,4 +348,3 @@ export default async function FoodPage({
     </main>
   );
 }
-

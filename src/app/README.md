@@ -13,5 +13,7 @@
 - sources/page.tsx：官方实验室数据源权威列表
 - about/page.tsx：项目背景与团队介绍
 - disclaimer/page.tsx：数据限制与免责声明
+ - privacy/page.tsx：隐私政策与合规页面
+ - terms/page.tsx：服务条款与法律责任边界页面
+ - contact/page.tsx：联系我们与数据纠错反馈页面
 - robots.txt / sitemap.xml / manifest.ts：SEO 爬虫与 PWA 配置
-
