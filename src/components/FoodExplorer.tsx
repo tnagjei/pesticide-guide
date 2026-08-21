@@ -4,7 +4,7 @@
 // pos: 首页首屏核心交互容器，支持国家切换、种植模式过滤、即时气泡图检索与抽屉详情（更新规则：文件变更需同步本注释与所属目录 README）
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { FoodVisual } from "@/components/FoodVisual";
 import {
   buyingVerdict,
@@ -33,6 +33,10 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
   const mode =
     productionModes.find((item) => item.id === modeId) ?? productionModes[0];
   const dataKey = mode?.dataKey ?? marketId;
+
+  useEffect(() => {
+    setSelectedCode(null);
+  }, [dataKey]);
 
   const activeFoods = useMemo(
     () =>
@@ -67,6 +71,7 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
               onClick={() => {
                 setMarketId(item.id);
                 setModeId("all");
+                setSelectedCode(null);
               }}
               type="button"
             >
@@ -198,7 +203,6 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
       {/* 4. Rich Slide-over Detail Drawer / BottomSheet */}
       {selected && verdict ? (
         <div
-          aria-hidden="true"
           className="drawer-backdrop"
           onClick={() => setSelectedCode(null)}
         >
