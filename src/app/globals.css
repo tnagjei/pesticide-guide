@@ -81,7 +81,7 @@ a {
   min-height: 64px;
   padding: 10px clamp(16px, 4vw, 48px);
   border-bottom: 1px solid var(--line);
-  background: rgba(244, 239, 228, 0.92);
+  background: rgba(244, 239, 228, 0.94);
   backdrop-filter: blur(16px);
 }
 
@@ -186,13 +186,13 @@ h1, h2, h3, h4 {
 .hero-tool-section {
   width: min(1480px, calc(100% - 24px));
   margin: 0 auto;
-  padding: 24px 0 48px;
+  padding: 20px 0 48px;
 }
 
 .hero-headline-wrap {
   text-align: center;
   max-width: 860px;
-  margin: 0 auto 20px;
+  margin: 0 auto 24px;
 }
 
 .hero-headline-wrap h1 {
@@ -213,45 +213,46 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
-   2D Food Map Interactive Canvas (The Marc Lou Original High-Fidelity Style)
+   2D Food Map Interactive Container
    ========================================================================== */
 .map-experience-root {
   position: relative;
   width: 100%;
-  height: clamp(560px, 82vh, 840px);
-  min-height: 520px;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   border: 1px solid var(--line);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  background: #f5f0e6;
+  background: #ffffff;
 }
 
-/* Floating Top Controls (Glassmorphic) */
-.floating-top-controls {
-  position: absolute;
-  top: 16px;
-  left: 50%;
-  transform: translateX(-50%);
+/* Dedicated Top Toolbar: Clean, Unobstructed, Outside the 2D Canvas */
+.map-control-toolbar {
+  position: relative;
   z-index: 20;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
-  max-width: calc(100% - 24px);
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 20px;
+  background: #faf7ef;
+  border-bottom: 1px solid var(--line-light);
 }
 
 .source-filter-bar {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 4px;
   padding: 4px;
   border-radius: 999px;
-  background: rgba(242, 238, 228, 0.88);
-  backdrop-filter: blur(16px) saturate(120%);
-  border: 1px solid rgba(23, 33, 23, 0.14);
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), 0 8px 24px rgba(21, 32, 20, 0.12);
+  background: #ede8dc;
+  border: 1px solid var(--line-light);
   overflow-x: auto;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
 }
 
 .source-filter-bar::-webkit-scrollbar {
@@ -262,9 +263,8 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  min-width: 48px;
   min-height: 32px;
-  padding: 0 10px;
+  padding: 0 11px;
   border: 0;
   border-radius: 999px;
   background: transparent;
@@ -274,32 +274,68 @@ h1, h2, h3, h4 {
   cursor: pointer;
   white-space: nowrap;
   transition: all 140ms ease;
+  flex: none;
 }
 
 .source-btn:hover {
   color: var(--forest);
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .source-btn[aria-pressed="true"] {
   background: #ffffff;
   color: var(--forest);
-  box-shadow: inset 0 1px 1px #fff, 0 3px 10px rgba(23, 34, 29, 0.16);
+  box-shadow: 0 2px 6px rgba(23, 34, 29, 0.12);
 }
 
-.expandable-search-wrap {
+.mode-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border-radius: 999px;
+  background: #ede8dc;
+  border: 1px solid var(--line-light);
+}
+
+.mode-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(35, 46, 34, 0.65);
+  font-size: 11px;
+  font-weight: 750;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 130ms ease;
+}
+
+.mode-toggle-btn:hover {
+  color: var(--forest);
+}
+
+.mode-toggle-btn[aria-pressed="true"] {
+  background: #ffffff;
+  color: var(--forest);
+  box-shadow: 0 2px 5px rgba(23, 34, 29, 0.1);
+}
+
+.search-box-wrap {
   position: relative;
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 38px;
   border-radius: 999px;
-  background: rgba(247, 243, 234, 0.92);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(23, 33, 23, 0.14);
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), 0 8px 24px rgba(21, 32, 20, 0.12);
+  background: #ffffff;
+  border: 1px solid var(--line);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
   padding: 0 12px;
-  transition: width 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
-  width: 190px;
+  width: 210px;
 }
 
 .search-symbol {
@@ -314,17 +350,17 @@ h1, h2, h3, h4 {
   outline: 0;
   background: transparent;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--ink);
 }
 
 .search-field::placeholder {
   color: #8c968f;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .search-reset-btn {
-  background: rgba(45, 56, 44, 0.12);
+  background: #eee9dd;
   border: 0;
   border-radius: 50%;
   width: 20px;
@@ -336,54 +372,14 @@ h1, h2, h3, h4 {
   color: var(--ink);
 }
 
-/* Secondary Mode Filter (Organic / Non-organic) */
-.floating-mode-controls {
-  position: absolute;
-  top: 66px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 19;
-  display: flex;
-  gap: 3px;
-  padding: 3px;
-  border-radius: 999px;
-  background: rgba(242, 238, 228, 0.85);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(23, 33, 23, 0.12);
-  box-shadow: 0 6px 18px rgba(21, 32, 20, 0.08);
-}
-
-.mode-toggle-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  min-height: 26px;
-  padding: 0 9px;
-  border: 0;
-  border-radius: 999px;
-  background: transparent;
-  color: rgba(35, 46, 34, 0.65);
-  font-size: 11px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 130ms ease;
-}
-
-.mode-toggle-btn:hover {
-  color: var(--forest);
-}
-
-.mode-toggle-btn[aria-pressed="true"] {
-  background: #ffffff;
-  color: var(--forest);
-  box-shadow: 0 2px 6px rgba(23, 34, 29, 0.12);
-}
-
-/* The Quadrant Map Layout */
+/* The 2D Quadrant Map Canvas Area (100% Unobstructed) */
 .interactive-quadrant-chart {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  width: 100%;
+  height: clamp(520px, 72vh, 760px);
+  min-height: 480px;
   overflow: hidden;
+  background: #f5f0e6;
 }
 
 .quadrant-grid-bg {
@@ -435,7 +431,7 @@ h1, h2, h3, h4 {
   height: 1px;
 }
 
-/* Corner Quadrant Labels */
+/* Corner Quadrant Labels (Now Completely Free From Button Overlaps) */
 .corner-quadrant-labels {
   position: absolute;
   inset: 16px 20px;
@@ -452,7 +448,7 @@ h1, h2, h3, h4 {
   max-width: min(280px, 45vw);
   padding: 10px 14px;
   border-radius: 12px;
-  background: rgba(255, 253, 247, 0.78);
+  background: rgba(255, 253, 247, 0.82);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(23, 33, 23, 0.1);
   box-shadow: 0 6px 18px rgba(21, 32, 20, 0.06);
@@ -479,7 +475,7 @@ h1, h2, h3, h4 {
 
 .corner-tag[data-best="true"] {
   color: #2e6027;
-  background: rgba(246, 255, 237, 0.88);
+  background: rgba(246, 255, 237, 0.92);
   border-color: rgba(67, 109, 49, 0.2);
 }
 
@@ -549,6 +545,15 @@ h1, h2, h3, h4 {
   transition: transform 160ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+.food-artwork-img {
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 4px 6px rgba(47, 39, 29, 0.16));
+  pointer-events: none;
+  user-select: none;
+  transition: transform 160ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
 .produce-tooltip-name {
   position: absolute;
   top: calc(100% - 2px);
@@ -577,7 +582,10 @@ h1, h2, h3, h4 {
 
 .produce-point-btn:hover .produce-visual,
 .produce-point-btn:focus-visible .produce-visual,
-.produce-point-btn[data-selected="true"] .produce-visual {
+.produce-point-btn[data-selected="true"] .produce-visual,
+.produce-point-btn:hover .food-artwork-img,
+.produce-point-btn:focus-visible .food-artwork-img,
+.produce-point-btn[data-selected="true"] .food-artwork-img {
   transform: translateY(-4px) scale(1.22);
 }
 
@@ -603,7 +611,7 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
-   Slide-over Drawer / BottomSheet
+   Slide-over Drawer / Mobile BottomSheet
    ========================================================================== */
 .drawer-backdrop {
   position: fixed;
@@ -1050,8 +1058,8 @@ h1, h2, h3, h4 {
   box-shadow: var(--shadow-md);
 }
 
-.food-index-emoji {
-  font-size: 28px;
+.food-index-visual {
+  flex: none;
 }
 
 .food-index-meta {
@@ -1488,9 +1496,13 @@ thead th {
 }
 
 /* ==========================================================================
-   Responsive Breakpoints
+   Responsive Breakpoints & Mobile Touch Optimization
    ========================================================================== */
 @media (max-width: 1024px) {
+  .map-control-toolbar {
+    padding: 12px 16px;
+  }
+
   .guide-cards-grid,
   .reading-grid {
     grid-template-columns: 1fr;
@@ -1507,29 +1519,34 @@ thead th {
 }
 
 @media (max-width: 768px) {
-  .map-experience-root {
-    height: 600px;
-    min-height: 520px;
-  }
-
-  .floating-top-controls {
-    top: 10px;
+  .map-control-toolbar {
     flex-direction: column;
-    gap: 6px;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px 14px;
   }
 
-  .floating-mode-controls {
-    top: 92px;
+  .source-filter-bar {
+    width: 100%;
+    justify-content: flex-start;
   }
 
-  .expandable-search-wrap {
-    width: 240px;
-    height: 36px;
+  .mode-filter-bar {
+    align-self: flex-start;
+  }
+
+  .search-box-wrap {
+    width: 100%;
+  }
+
+  .interactive-quadrant-chart {
+    height: 520px;
+    min-height: 460px;
   }
 
   .corner-tag {
-    padding: 6px 10px;
-    max-width: 140px;
+    padding: 6px 9px;
+    max-width: 130px;
   }
 
   .corner-tag strong {
@@ -1541,8 +1558,8 @@ thead th {
   }
 
   .produce-point-btn {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
   }
 
   .produce-visual {
@@ -1602,21 +1619,5 @@ thead th {
     align-items: flex-start;
     gap: 16px;
   }
-}
-
-
-
-.food-artwork-img {
-  object-fit: contain;
-  display: block;
-  filter: drop-shadow(0 4px 6px rgba(47, 39, 29, 0.16));
-  pointer-events: none;
-  user-select: none;
-}
-
-.produce-point-btn:hover .food-artwork-img,
-.produce-point-btn:focus-visible .food-artwork-img,
-.produce-point-btn[data-selected="true"] .food-artwork-img {
-  transform: translateY(-4px) scale(1.22);
 }
 

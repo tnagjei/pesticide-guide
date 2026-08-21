@@ -59,8 +59,9 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
 
   return (
     <div className="map-experience-root">
-      {/* 1. Top Floating Filter Toolbar (Centered Glassmorphic Controls) */}
-      <div className="floating-top-controls">
+      {/* 1. Dedicated Control Toolbar (Clean, Unobstructed Above The 2D Canvas) */}
+      <div className="map-control-toolbar">
+        {/* Country Selector Pills */}
         <div className="source-filter-bar" role="group" aria-label="Select Country Data Source">
           {markets.map((item) => (
             <button
@@ -81,14 +82,34 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
           ))}
         </div>
 
-        {/* Expandable Search Input */}
-        <div className="expandable-search-wrap">
+        {/* Middle: Production Mode Filter (All / Organic / Non-organic) */}
+        {productionModes.length > 0 ? (
+          <div className="mode-filter-bar" role="group" aria-label="Production Method">
+            {productionModes.map((item) => (
+              <button
+                aria-pressed={modeId === item.id}
+                className="mode-toggle-btn"
+                key={item.id}
+                onClick={() => {
+                  setModeId(item.id);
+                }}
+                type="button"
+              >
+                {item.emoji ? <span aria-hidden="true">{item.emoji} </span> : null}
+                <span>{item.label}</span>
+              </button>
+            ))}
+          </div>
+        ) : null}
+
+        {/* Right: Expandable Search Input */}
+        <div className="search-box-wrap">
           <span className="search-symbol" aria-hidden="true">⌕</span>
           <input
             aria-label="Find a food on the map"
             className="search-field"
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Find food..."
+            placeholder="Search produce..."
             type="search"
             value={query}
           />
@@ -105,25 +126,7 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
         </div>
       </div>
 
-      {/* 2. Secondary Production Method Filter (All / Organic / Non-organic) */}
-      {productionModes.length > 0 ? (
-        <div className="floating-mode-controls" role="group" aria-label="Production Method">
-          {productionModes.map((item) => (
-            <button
-              aria-pressed={modeId === item.id}
-              className="mode-toggle-btn"
-              key={item.id}
-              onClick={() => setModeId(item.id)}
-              type="button"
-            >
-              {item.emoji ? <span aria-hidden="true">{item.emoji} </span> : null}
-              <span>{item.label}</span>
-            </button>
-          ))}
-        </div>
-      ) : null}
-
-      {/* 3. The 2D Interactive Quadrant Chart (The Core Original Experience) */}
+      {/* 2. The 2D Interactive Quadrant Chart (100% Unobstructed Canvas) */}
       <div className="interactive-quadrant-chart" aria-label="Interactive 2D Produce Map">
         {/* Four Quadrant Gradients */}
         <div className="quadrant-grid-bg" aria-hidden="true">
@@ -182,7 +185,7 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
                 type="button"
               >
                 <span className="produce-visual" aria-hidden="true">
-                  <FoodVisual emoji={food.emoji} name={food.name} size={32} />
+                  <FoodVisual emoji={food.emoji} name={food.name} size={34} />
                 </span>
                 <span className="produce-tooltip-name">{food.name}</span>
               </button>
@@ -200,7 +203,7 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
         ) : null}
       </div>
 
-      {/* 4. Rich Slide-over Detail Drawer / BottomSheet */}
+      {/* 3. Rich Slide-over Detail Drawer / Mobile BottomSheet */}
       {selected && verdict ? (
         <div
           className="drawer-backdrop"
@@ -314,4 +317,3 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
     </div>
   );
 }
-
