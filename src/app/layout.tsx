@@ -4,6 +4,7 @@
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MakeThisBetterWidget } from "@/components/MakeThisBetterWidget";
 import "./globals.css";
 
 const siteUrl = "https://pesticideguide.online";
@@ -55,6 +56,7 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
+        <MakeThisBetterWidget />
        <footer className="site-footer">
          <div>
            <strong>Pesticide Guide</strong>
@@ -74,6 +76,9 @@ export default function RootLayout({
            <Link href="/terms">Terms</Link>
            <Link href="/contact">Contact</Link>
            <Link href="/disclaimer">Disclaimer</Link>
+           <a href="https://pesticide-guide.makethisbetter.dev" target="_blank" rel="noopener noreferrer">
+             Feedback
+           </a>
          </nav>
        </footer>
       </body>

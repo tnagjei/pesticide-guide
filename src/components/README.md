@@ -7,4 +7,4 @@
 ## Files
 - FoodExplorer.tsx：高保真 2D 农残与长寿营养四象限交互式罗盘图与详情抽屉
 - FoodVisual.tsx：自适应果蔬高清透明插画与原生 Emoji 渲染组件，消除纯色圆点与重复混淆
-
+- MakeThisBetterWidget.tsx：客户端初始化 MakeThisBetter 用户反馈组件

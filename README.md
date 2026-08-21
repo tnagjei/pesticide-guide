@@ -14,6 +14,7 @@ Interactive produce monitoring atlas and 2D food compass comparing official labo
 - **Testing**: Vitest
 - **Styling**: Native CSS with Glassmorphism, CSS Grid, and custom animations
 - **Deployment**: Vercel
+- **Feedback**: MakeThisBetter widget with a site-wide feedback board link
 
 ## Running Locally
 ```bash
@@ -23,4 +24,3 @@ npm test
 npm run typecheck
 npm run build
 ```
-
