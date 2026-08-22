@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   },
   description:
     "Compare 69 fruits, vegetables and legumes using public pesticide monitoring records and Food Compass 2.0 nutrition scores.",
+  other: {
+    "yandex-verification": "699bc0992432499d",
+  },
   alternates: { canonical: "/" },
   openGraph: {
     title: "Pesticide Guide",
