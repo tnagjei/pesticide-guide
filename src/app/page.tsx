@@ -6,11 +6,29 @@ import Link from "next/link";
 import { FoodExplorer } from "@/components/FoodExplorer";
 import { FoodVisual } from "@/components/FoodVisual";
 import { getAllFoods, getExplorerFoods, getSnapshot } from "@/lib/data";
-import { buyingVerdict, slugifyFood } from "@/lib/food";
+import { buyingVerdict, getRankings, slugifyFood } from "@/lib/food";
 
 export default function HomePage() {
   const snapshot = getSnapshot();
   const foods = getAllFoods();
+  const { dirtyDozen, cleanFifteen } = getRankings(foods, "all");
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Pesticide Guide",
+    url: "https://pesticideguide.online",
+    description:
+      "Public database and interactive 2D atlas comparing pesticide residue monitoring records and Food Compass nutrition scores for 69 fruits and vegetables.",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://pesticideguide.online/?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
 
   const applicationSchema = {
     "@context": "https://schema.org",
@@ -67,6 +85,12 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
           __html: JSON.stringify(applicationSchema).replace(/</g, "\\u003c"),
         }}
       />
@@ -81,7 +105,7 @@ export default function HomePage() {
       <section className="hero-tool-section">
         <div className="hero-headline-wrap">
           <p className="eyebrow">Official Laboratory Data · 2026 Edition</p>
-          <h1>Know what is on your produce before you shop.</h1>
+          <h1>Produce Pesticide Guide: Know what is on your food before you shop.</h1>
           <p className="hero-lede">
             Explore 69 fruits, vegetables, and legumes across 9 international markets.
             Instantly compare laboratory-tested pesticide load, longevity nutrition scores, and organic buying recommendations.
@@ -154,6 +178,65 @@ export default function HomePage() {
               <li>Rinse thoroughly under running water before slicing or eating</li>
             </ul>
           </article>
+        </div>
+      </section>
+
+      {/* Section 2.5: 2026 Dirty Dozen & Clean 15 Official Rankings */}
+      <section className="content-section rankings-section" aria-labelledby="rankings-title" id="rankings">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">2026 Laboratory Rankings</p>
+            <h2 id="rankings-title">Dirty Dozen & Clean 15 Produce Lists</h2>
+          </div>
+          <p>
+            Ranked by overall chemical residue load across 184,000+ government lab tests. Know which foods to prioritize buying organic.
+          </p>
+        </div>
+
+        <div className="rankings-grid">
+          {/* Dirty Dozen Card */}
+          <div className="ranking-column card-dirty">
+            <div className="ranking-header">
+              <span className="card-badge badge-warning">DIRTY DOZEN (BUY ORGANIC)</span>
+              <h3>Highest Pesticide Load</h3>
+              <p>These 12 crops had the highest concentration of multiple synthetic chemical residues.</p>
+            </div>
+            <ol className="ranking-list">
+              {dirtyDozen.map((item, idx) => (
+                <li key={item.code} className="ranking-item">
+                  <span className="rank-num rank-num-dirty">#{idx + 1}</span>
+                  <FoodVisual emoji={item.emoji} name={item.name} size={28} />
+                  <Link className="rank-food-name" href={`/food/${slugifyFood(item.name)}`}>
+                    <strong>{item.name}</strong>
+                    <small>{item.samples.toLocaleString("en-US")} tests</small>
+                  </Link>
+                  <span className="rank-score score-dirty">Load {item.score}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+
+          {/* Clean 15 Card */}
+          <div className="ranking-column card-clean">
+            <div className="ranking-header">
+              <span className="card-badge badge-success">CLEAN 15 (SAFE CONVENTIONAL)</span>
+              <h3>Lowest Pesticide Load</h3>
+              <p>These 15 crops showed minimal to zero detectable residues across public monitoring programs.</p>
+            </div>
+            <ol className="ranking-list">
+              {cleanFifteen.map((item, idx) => (
+                <li key={item.code} className="ranking-item">
+                  <span className="rank-num rank-num-clean">#{idx + 1}</span>
+                  <FoodVisual emoji={item.emoji} name={item.name} size={28} />
+                  <Link className="rank-food-name" href={`/food/${slugifyFood(item.name)}`}>
+                    <strong>{item.name}</strong>
+                    <small>{item.samples.toLocaleString("en-US")} tests</small>
+                  </Link>
+                  <span className="rank-score score-clean">Load {item.score}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </section>
 
@@ -286,4 +369,3 @@ export default function HomePage() {
     </main>
   );
 }
-

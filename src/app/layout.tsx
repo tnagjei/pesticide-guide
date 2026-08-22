@@ -13,19 +13,19 @@ const siteUrl = "https://pesticideguide.online";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Pesticide Guide | Compare Produce by Pesticide Load",
+    default: "Produce Pesticide Guide | 2026 Residue Load & Organic Buying Data",
     template: "%s | Pesticide Guide",
   },
   description:
-    "Compare 69 fruits, vegetables and legumes using public pesticide monitoring records and Food Compass 2.0 nutrition scores.",
+    "Compare 69 fruits, vegetables, and legumes using 184,000+ official pesticide residue lab tests (USDA, EFSA) and Food Compass 2.0 nutrition scores.",
   other: {
     "yandex-verification": "699bc0992432499d",
   },
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Pesticide Guide",
+    title: "Pesticide Guide - Compare Produce by Pesticide Load",
     description:
-      "A field guide to pesticide monitoring data for 69 familiar foods.",
+      "Explore 69 fruits, vegetables and legumes across 9 international markets using official USDA, EFSA and CFIA laboratory pesticide monitoring records.",
     url: siteUrl,
     siteName: "Pesticide Guide",
     images: [{ url: "/og-card.jpg", width: 1200, height: 800 }],
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pesticide Guide",
+    title: "Pesticide Guide - Produce Pesticide Residue Atlas",
     description:
-      "Compare public pesticide monitoring data across 69 familiar foods.",
+      "Compare 69 produce items using 184,000+ official laboratory pesticide monitoring records across 9 international markets.",
     images: ["/og-card.jpg"],
   },
 };
