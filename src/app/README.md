@@ -16,4 +16,4 @@
  - privacy/page.tsx：隐私政策与合规页面
  - terms/page.tsx：服务条款与法律责任边界页面
  - contact/page.tsx：联系我们与数据纠错反馈页面
-- robots.txt / sitemap.xml / manifest.ts：SEO 爬虫与 PWA 配置
+- robots.ts / sitemap.ts / manifest.ts / public/*.txt：SEO 爬虫、站点地图、IndexNow 密钥与 PWA 配置
