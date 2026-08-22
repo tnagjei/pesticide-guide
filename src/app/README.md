@@ -6,7 +6,7 @@
 
 ## Files
 - page.tsx：网站首页（首屏 2D 罗盘与二屏 SEO 结构化指南）
-- layout.tsx：全站通用布局、元数据、导航与 MakeThisBetter 反馈入口
+- layout.tsx：全站通用布局、元数据、导航、GA4 与 MakeThisBetter 反馈入口
 - globals.css：全站全局 CSS 样式表与 2D 罗盘动画
 - food/[slug]/page.tsx：69 种果蔬独立详情页与市场对比
 - methodology/page.tsx：官方农残计算方法论页面

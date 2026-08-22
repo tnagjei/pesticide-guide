@@ -1,9 +1,10 @@
 // input: 全局页面子组件 children
-// output: 网站根布局模板（含全局 Header, Footer, SEO 元数据与联系信息）
+// output: 网站根布局模板（含全局 Header, Footer, SEO 元数据、联系信息与 GA4）
 // pos: Next.js 全局 HTML/Body 容器（更新规则：文件变更需同步本注释与所属目录 README）
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { MakeThisBetterWidget } from "@/components/MakeThisBetterWidget";
 import "./globals.css";
 
@@ -82,6 +83,7 @@ export default function RootLayout({
          </nav>
        </footer>
       </body>
+      <GoogleAnalytics gaId="G-CHT0MX5QK1" />
     </html>
   );
 }
