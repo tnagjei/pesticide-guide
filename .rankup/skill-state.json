@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "skill": "rankup",
+  "version": "2.43.0",
+  "installedAt": "2026-08-24T09:03:42Z",
+  "lastCheckedAt": "2026-08-24T09:03:42Z",
+  "updateAvailable": null,
+  "source": "yan-labs/yan-skills",
+  "note": "项目记忆由 rankup init 创建；未修改业务代码。"
+}
