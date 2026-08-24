@@ -65,6 +65,7 @@ export default async function FoodPage({
     name: `${food.name} pesticide monitoring profile`,
     description: foodDescription(food),
     dateModified: "2026-08-20",
+    license: "https://pesticideguide.online/terms#data-license",
     creator: { "@type": "Organization", name: "Pesticide Guide" },
    variableMeasured: [
      "Pesticide load score",

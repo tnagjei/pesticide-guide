@@ -56,16 +56,27 @@ export default function TermsPage() {
           The site design, interactive 2D atlas implementation, software code, and comparative scoring algorithms are protected by copyright. Government monitoring raw datasets remain under their respective public domain or open government licenses.
         </p>
       </section>
+      <section id="data-license">
+        <h2>5. Data License</h2>
+        <p>
+          The derived food-level comparisons, labels, and snapshot presented by
+          Pesticide Guide are distributed under these Terms of Service. The
+          underlying government and academic source datasets are not relicensed
+          by Pesticide Guide and remain subject to their respective licenses.
+          Follow the source links on the <Link href="/sources">Data Sources</Link>
+          page for the applicable source terms.
+        </p>
+      </section>
 
       <section>
-        <h2>5. Modifications to Service</h2>
+        <h2>6. Modifications to Service</h2>
         <p>
           We reserve the right to modify, update, or discontinue features of the website at any time without prior notice.
         </p>
       </section>
 
       <section>
-        <h2>6. Contact and Inquiries</h2>
+        <h2>7. Contact and Inquiries</h2>
         <p>
           For legal notices or questions regarding these terms, contact us at:{" "}
           <a href="mailto:contact@pesticideguide.online">contact@pesticideguide.online</a>.

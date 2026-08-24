@@ -1,3 +1,7 @@
+// input: getSnapshot(), getSourceGroups()
+// output: 数据源目录页与 Dataset 结构化数据
+// pos: 公开数据来源和许可边界（更新规则：文件变更需同步本注释与所属目录 README）
+
 import type { Metadata } from "next";
 import { getSnapshot, getSourceGroups } from "@/lib/data";
 
@@ -18,6 +22,7 @@ export default function SourcesPage() {
     description:
       "A food-level comparison snapshot derived from public pesticide monitoring records and Food Compass 2.0.",
     dateModified: meta.generatedAt,
+    license: "https://pesticideguide.online/terms#data-license",
     url: "https://pesticideguide.online/sources",
     variableMeasured: [
       "Sample count",
