@@ -1,0 +1,721 @@
+# Pesticide Guide - Complete Knowledge Base
+> Full data export and guide comparing official pesticide monitoring records (USDA PDP, EFSA, CFIA) and Food Compass 2.0 nutrition scores for 69 fruits, vegetables, and legumes across 9 international markets.
+
+## Methodology Overview
+- Total Lab Tests: 184,077 official government chemical monitoring samples.
+- Pesticide Load Score (0-100): Relative score based on detection rate, multiple residue counts, and EPA chronic/acute benchmarks. Lower score means cleaner produce.
+- Food Compass Score (0-100): Tufts University nutrient profiling system evaluating 54 nutrient attributes across 9 health domains. Higher score indicates richer nutrient density.
+- Evidence Quality Index: High (>=80% coverage and >=100 samples), Moderate (>=60% coverage and >=40 samples), Limited (<40 samples).
+- Washing Protocol: 1% baking soda (sodium bicarbonate) solution (1 tsp per 2 cups water) soaked for 12-15 minutes degrades 80-96% of surface residues, outperforming tap water.
+
+## Produce Profiles Index (69 Foods)
+
+### Apples (fruit)
+- URL: https://pesticideguide.online/food/apples
+- Pesticide Load Score: 66/100
+- Food Compass 2.0 Score: 94/100 (exact match)
+- Total Tested Samples: 7,174 tests (2014-2024)
+- Benchmark Coverage: 85.8%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Phosmet (detected in 1.5% of samples), Captan (sum of captan and THPI, expressed as captan) (detected in 15.2% of samples), Phosmet (detected in 1.5% of samples), Pyrimethanil (detected in 15.4% of samples)
+
+### Apricots (fruit)
+- URL: https://pesticideguide.online/food/apricots
+- Pesticide Load Score: 51/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 1,242 tests (2019-2024)
+- Benchmark Coverage: 76.8%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Tebuconazole (detected in 27% of samples), Fluopyram (detected in 13.9% of samples), Pyraclostrobin (detected in 14.5% of samples), Captan (sum of captan and THPI, expressed as captan) (detected in 9% of samples)
+
+### Asparagus (vegetable)
+- URL: https://pesticideguide.online/food/asparagus
+- Pesticide Load Score: 62/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 3,708 tests (2009-2024)
+- Benchmark Coverage: 27.8%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Methamidophos (detected in 0.5% of samples), Dimethoate (detected in 0.1% of samples), Linuron (detected in 0.7% of samples), Acephate (detected in 0% of samples)
+
+### Avocado (fruit)
+- URL: https://pesticideguide.online/food/avocado
+- Pesticide Load Score: 19/100
+- Food Compass 2.0 Score: 96/100 (exact match)
+- Total Tested Samples: 1,886 tests (2012-2024)
+- Benchmark Coverage: 48.8%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Thiabendazole (detected in 4.6% of samples), Fosetyl-Al (sum of fosetyl, phosphonic acid and their salts, expressed as fosetyl) (detected in 1.5% of samples), Methamidophos (detected in 0.1% of samples), thiabendazole (detected in 1% of samples)
+
+### Bananas (fruit)
+- URL: https://pesticideguide.online/food/bananas
+- Pesticide Load Score: 25/100
+- Food Compass 2.0 Score: 81/100 (exact match)
+- Total Tested Samples: 4,877 tests (2012-2024)
+- Benchmark Coverage: 90.1%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Bifenthrin (sum of isomers) (detected in 6.2% of samples), Ethoprop (detected in 0.5% of samples), Thiabendazole (detected in 10.5% of samples), Azoxystrobin (detected in 15.4% of samples)
+
+### Basil (vegetable)
+- URL: https://pesticideguide.online/food/basil
+- Pesticide Load Score: 94/100
+- Food Compass 2.0 Score: 100/100 (proxy match)
+- Total Tested Samples: 343 tests (2019-2019)
+- Benchmark Coverage: 88.4%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Profenofos (detected in 0.9% of samples), Fipronil (detected in 2.6% of samples), Acephate (detected in 1.7% of samples), Imidacloprid (detected in 51.3% of samples)
+
+### Beets (vegetable)
+- URL: https://pesticideguide.online/food/beets
+- Pesticide Load Score: 18/100
+- Food Compass 2.0 Score: 86/100 (exact match)
+- Total Tested Samples: 446 tests (2019-2024)
+- Benchmark Coverage: 51.8%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Fluazifop (detected in 2.5% of samples), Methamidophos (detected in 0.2% of samples), Difenoconazole (detected in 1.8% of samples), Pyraclostrobin (detected in 4.7% of samples)
+
+### Bell Peppers (vegetable)
+- URL: https://pesticideguide.online/food/bell-peppers
+- Pesticide Load Score: 82/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 4,687 tests (2011-2024)
+- Benchmark Coverage: 78.3%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Acephate (detected in 3.1% of samples), Methamidophos (detected in 4% of samples), Acephate (detected in 0.5% of samples), Methamidophos (detected in 0.4% of samples)
+
+### Black Beans (legume)
+- URL: https://pesticideguide.online/food/black-beans
+- Pesticide Load Score: 13/100
+- Food Compass 2.0 Score: 95/100 (exact match)
+- Total Tested Samples: 26 tests (2020-2024)
+- Benchmark Coverage: 40%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: carbendazim (sum) (detected in 11.5% of samples), dimethoate (detected in 3.8% of samples), thiophanate-methyl (detected in 7.7% of samples), diphenylamine (detected in 3.8% of samples)
+
+### Blackberries (fruit)
+- URL: https://pesticideguide.online/food/blackberries
+- Pesticide Load Score: 87/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 1,214 tests (2020-2024)
+- Benchmark Coverage: 86%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Methamidophos (detected in 2.1% of samples), Acephate (detected in 1.5% of samples), Cypermethrin (detected in 35.5% of samples), Bifenthrin (detected in 22.3% of samples)
+
+### Blueberries (fruit)
+- URL: https://pesticideguide.online/food/blueberries
+- Pesticide Load Score: 93/100
+- Food Compass 2.0 Score: 96/100 (exact match)
+- Total Tested Samples: 2,901 tests (2008-2024)
+- Benchmark Coverage: 85.4%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Phosmet (detected in 13.8% of samples), Bifenthrin (detected in 11% of samples), Cypermethrin (detected in 14.5% of samples), phosmet (sum) (detected in 0.1% of samples)
+
+### Broccoli (vegetable)
+- URL: https://pesticideguide.online/food/broccoli
+- Pesticide Load Score: 21/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 4,694 tests (2008-2024)
+- Benchmark Coverage: 71.8%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Difenoconazole (detected in 2.2% of samples), Methamidophos (detected in 0% of samples), Imidacloprid (detected in 15.1% of samples), Oxydemeton methyl (detected in 0% of samples)
+
+### Brussels Sprouts (vegetable)
+- URL: https://pesticideguide.online/food/brussels-sprouts
+- Pesticide Load Score: 41/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 516 tests (2019-2024)
+- Benchmark Coverage: 55%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Flonicamid (sum of flonicamid, TFNA and TFNG expressed as flonicamid) (detected in 25.8% of samples), Acephate (detected in 0.4% of samples), Methamidophos (detected in 0.6% of samples), Difenoconazole (detected in 27.3% of samples)
+
+### Cabbage (vegetable)
+- URL: https://pesticideguide.online/food/cabbage
+- Pesticide Load Score: 29/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 3,577 tests (2010-2024)
+- Benchmark Coverage: 78.6%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Methamidophos (detected in 0.1% of samples), Acephate (detected in 0.1% of samples), Methamidophos (detected in 0.2% of samples), Imidacloprid (detected in 6.4% of samples)
+
+### Cantaloupe (fruit)
+- URL: https://pesticideguide.online/food/cantaloupe
+- Pesticide Load Score: 12/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 3,553 tests (2011-2024)
+- Benchmark Coverage: 76.6%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Imidacloprid (detected in 11.1% of samples), acephate (detected in 0% of samples), Flonicamid (sum of flonicamid, TFNA and TFNG expressed as flonicamid) (detected in 2.5% of samples), Acephate (detected in 0.1% of samples)
+
+### Carrots (vegetable)
+- URL: https://pesticideguide.online/food/carrots
+- Pesticide Load Score: 31/100
+- Food Compass 2.0 Score: 96/100 (exact match)
+- Total Tested Samples: 5,413 tests (2013-2024)
+- Benchmark Coverage: 74.8%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Linuron (detected in 14.1% of samples), Triadimenol (detected in 0% of samples), Phosmet (detected in 0.1% of samples), Pyraclostrobin (detected in 6.9% of samples)
+
+### Cauliflower (vegetable)
+- URL: https://pesticideguide.online/food/cauliflower
+- Pesticide Load Score: 35/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 3,654 tests (2012-2024)
+- Benchmark Coverage: 84.8%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Methamidophos (detected in 1% of samples), Acephate (detected in 1% of samples), Imidacloprid (detected in 19.3% of samples), Acephate (detected in 0.1% of samples)
+
+### Celery (vegetable)
+- URL: https://pesticideguide.online/food/celery
+- Pesticide Load Score: 99/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 3,433 tests (2013-2024)
+- Benchmark Coverage: 75%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Acephate (detected in 12.2% of samples), Methamidophos (detected in 4.7% of samples), Acephate (detected in 1% of samples), Difenoconazole (detected in 4.6% of samples)
+
+### Cherries (fruit)
+- URL: https://pesticideguide.online/food/cherries
+- Pesticide Load Score: 81/100
+- Food Compass 2.0 Score: 85/100 (exact match)
+- Total Tested Samples: 2,229 tests (2001-2024)
+- Benchmark Coverage: 83%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Cyhalothrin, Total (Cyhalothrin-L + R157836 epimer) (detected in 9.5% of samples), Tebuconazole (detected in 14.1% of samples), Azinphos methyl (detected in 9.6% of samples), Phosmet (detected in 0.9% of samples)
+
+### Cherry Tomatoes (fruit)
+- URL: https://pesticideguide.online/food/cherry-tomatoes
+- Pesticide Load Score: 63/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 2,011 tests (2011-2024)
+- Benchmark Coverage: 91.8%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Methamidophos (detected in 0.5% of samples), Bifenthrin (detected in 18.3% of samples), Famoxadone (detected in 1.6% of samples), Pyraclostrobin (detected in 20.9% of samples)
+
+### Chickpeas (legume)
+- URL: https://pesticideguide.online/food/chickpeas
+- Pesticide Load Score: 3/100
+- Food Compass 2.0 Score: 88/100 (exact match)
+- Total Tested Samples: 715 tests (2019-2023)
+- Benchmark Coverage: 91.9%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Fosetyl-Al (sum of fosetyl, phosphonic acid and their salts, expressed as fosetyl) (detected in 0.4% of samples), Carbendazim (MBC) (detected in 6% of samples), Fluxapyroxad (detected in 4.2% of samples), Flumioxazin (detected in 1% of samples)
+
+### Cilantro (vegetable)
+- URL: https://pesticideguide.online/food/cilantro
+- Pesticide Load Score: 59/100
+- Food Compass 2.0 Score: 100/100 (proxy match)
+- Total Tested Samples: 1,092 tests (2009-2019)
+- Benchmark Coverage: 54.1%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Methamidophos (detected in 1.1% of samples), Famoxadone (detected in 1.9% of samples), Acephate (detected in 0.1% of samples), Linuron (detected in 22.9% of samples)
+
+### Collard Greens (vegetable)
+- URL: https://pesticideguide.online/food/collard-greens
+- Pesticide Load Score: 75/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 1,380 tests (2006-2020)
+- Benchmark Coverage: 84.9%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Cyfluthrin (detected in 12.8% of samples), Cypermethrin (detected in 17.8% of samples), Pyraclostrobin (detected in 20.1% of samples), Acephate (detected in 0.2% of samples)
+
+### Corn (vegetable)
+- URL: https://pesticideguide.online/food/corn
+- Pesticide Load Score: 4/100
+- Food Compass 2.0 Score: 57/100 (exact match)
+- Total Tested Samples: 2,079 tests (2010-2024)
+- Benchmark Coverage: 44.9%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Methamidophos (detected in 0.1% of samples), Acephate (detected in 0% of samples), Epoxiconazole (detected in 0.1% of samples), Flupyradifurone (detected in 0.3% of samples)
+
+### Cranberries (fruit)
+- URL: https://pesticideguide.online/food/cranberries
+- Pesticide Load Score: 54/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 820 tests (2006-2024)
+- Benchmark Coverage: 70.4%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Acephate (detected in 2.6% of samples), Methamidophos (detected in 1.6% of samples), Cyantraniliprole (detected in 0.9% of samples), Difenoconazole (detected in 0.1% of samples)
+
+### Cucumbers (vegetable)
+- URL: https://pesticideguide.online/food/cucumbers
+- Pesticide Load Score: 50/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 4,565 tests (2010-2024)
+- Benchmark Coverage: 76.8%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Methamidophos (detected in 0.7% of samples), Dichlorvos (detected in 0% of samples), Acephate (detected in 0.2% of samples), Fluopyram (detected in 7.7% of samples)
+
+### Eggplant (vegetable)
+- URL: https://pesticideguide.online/food/eggplant
+- Pesticide Load Score: 68/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 4,384 tests (2005-2024)
+- Benchmark Coverage: 74.9%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Methamidophos (detected in 1.8% of samples), Acephate (detected in 0.4% of samples), Profenofos (detected in 0% of samples), Fluopyram (detected in 6.5% of samples)
+
+### Garlic (vegetable)
+- URL: https://pesticideguide.online/food/garlic
+- Pesticide Load Score: 15/100
+- Food Compass 2.0 Score: 80/100 (exact match)
+- Total Tested Samples: 345 tests (2019-2024)
+- Benchmark Coverage: 72%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Fipronil (detected in 0.3% of samples), Tebuconazole (detected in 5.2% of samples), Fluopyram (detected in 3.2% of samples), Pyraclostrobin (detected in 4.3% of samples)
+
+### Grapefruit (fruit)
+- URL: https://pesticideguide.online/food/grapefruit
+- Pesticide Load Score: 65/100
+- Food Compass 2.0 Score: 99/100 (exact match)
+- Total Tested Samples: 4,228 tests (2005-2024)
+- Benchmark Coverage: 76.7%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: imazalil (detected in 5.8% of samples), Chlorpyrifos-methyl (detected in 0.3% of samples), Imazalil (detected in 42.2% of samples), Thiabendazole (detected in 6.9% of samples)
+
+### Grapes (fruit)
+- URL: https://pesticideguide.online/food/grapes
+- Pesticide Load Score: 44/100
+- Food Compass 2.0 Score: 84/100 (exact match)
+- Total Tested Samples: 6,062 tests (2010-2024)
+- Benchmark Coverage: 91.3%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Cyprodinil (detected in 23.2% of samples), Tebuconazole (detected in 22.9% of samples), Pyraclostrobin (detected in 19.9% of samples), Imidacloprid (detected in 10.6% of samples)
+
+### Green Beans (vegetable)
+- URL: https://pesticideguide.online/food/green-beans
+- Pesticide Load Score: 100/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 3,039 tests (2015-2022)
+- Benchmark Coverage: 84.5%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Acephate (detected in 8.1% of samples), Methamidophos (detected in 8.6% of samples), Cyhalothrin, Total (Cyhalothrin-L + R157836 epimer) (detected in 9.2% of samples), Acephate (detected in 0.4% of samples)
+
+### Green Onions (vegetable)
+- URL: https://pesticideguide.online/food/green-onions
+- Pesticide Load Score: 28/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 1,490 tests (2008-2024)
+- Benchmark Coverage: 68.7%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Cypermethrin (detected in 10.1% of samples), Azoxystrobin (detected in 28.3% of samples), Fipronil (detected in 0.1% of samples), Difenoconazole (detected in 1.5% of samples)
+
+### Green Peas (vegetable)
+- URL: https://pesticideguide.online/food/green-peas
+- Pesticide Load Score: 49/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 113 tests (2019-2023)
+- Benchmark Coverage: 57.8%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Thiamethoxam (detected in 5.3% of samples), Methamidophos (detected in 0.9% of samples), Tolfenpyrad (detected in 0.9% of samples), Difenoconazole (detected in 19.5% of samples)
+
+### Hot Peppers (vegetable)
+- URL: https://pesticideguide.online/food/hot-peppers
+- Pesticide Load Score: 90/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 1,610 tests (2010-2024)
+- Benchmark Coverage: 74.3%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Acephate (detected in 5.5% of samples), Methamidophos (detected in 7.2% of samples), Profenofos (detected in 0.2% of samples), profenofos (detected in 0.1% of samples)
+
+### Kale (vegetable)
+- URL: https://pesticideguide.online/food/kale
+- Pesticide Load Score: 74/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 2,281 tests (2006-2022)
+- Benchmark Coverage: 72.1%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Cypermethrin (detected in 20.9% of samples), Pyraclostrobin (detected in 15.4% of samples), Cyfluthrin (detected in 7.9% of samples), Cyantraniliprole (detected in 5.9% of samples)
+
+### Kidney Beans (legume)
+- URL: https://pesticideguide.online/food/kidney-beans
+- Pesticide Load Score: 6/100
+- Food Compass 2.0 Score: 94/100 (exact match)
+- Total Tested Samples: 15 tests (2020-2023)
+- Benchmark Coverage: 50%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: carbendazim (sum) (detected in 6.7% of samples), Fosetyl-Al (sum) (detected in 20% of samples)
+
+### Kiwi (fruit)
+- URL: https://pesticideguide.online/food/kiwi
+- Pesticide Load Score: 22/100
+- Food Compass 2.0 Score: 99/100 (exact match)
+- Total Tested Samples: 2,807 tests (2018-2024)
+- Benchmark Coverage: 86.3%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Phosmet (detected in 0% of samples), Cyprodinil (detected in 2.6% of samples), Fludioxonil (detected in 7.9% of samples), Fludioxonil (detected in 4.9% of samples)
+
+### Lemons (fruit)
+- URL: https://pesticideguide.online/food/lemons
+- Pesticide Load Score: 69/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 1,295 tests (2019-2024)
+- Benchmark Coverage: 62.2%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: imazalil (detected in 6.1% of samples), Imazalil (detected in 14.1% of samples), Pyrimethanil (detected in 12.4% of samples), Thiabendazole (detected in 12.7% of samples)
+
+### Lentils (legume)
+- URL: https://pesticideguide.online/food/lentils
+- Pesticide Load Score: 26/100
+- Food Compass 2.0 Score: 98/100 (exact match)
+- Total Tested Samples: 21 tests (2023-2023)
+- Benchmark Coverage: 31.6%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: procymidone (detected in 9.5% of samples), Fosetyl-Al (sum) (detected in 28.6% of samples), carbendazim (sum) (detected in 9.5% of samples), boscalid (detected in 9.5% of samples)
+
+### Lettuce (vegetable)
+- URL: https://pesticideguide.online/food/lettuce
+- Pesticide Load Score: 76/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 4,150 tests (2010-2024)
+- Benchmark Coverage: 86.3%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Cyhalothrin, Total (Cyhalothrin-L + R157836 epimer) (detected in 9.7% of samples), Famoxadone (detected in 1.3% of samples), Oxydemeton methyl (detected in 1.3% of samples), Propamocarb hydrochloride (detected in 14.8% of samples)
+
+### Limes (fruit)
+- URL: https://pesticideguide.online/food/limes
+- Pesticide Load Score: 91/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 393 tests (2019-2024)
+- Benchmark Coverage: 64.5%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Cadusafos (detected in 0.3% of samples), Phosmet (detected in 0.8% of samples), Imazalil (detected in 18.8% of samples), Thiabendazole (detected in 13.7% of samples)
+
+### Mangoes (fruit)
+- URL: https://pesticideguide.online/food/mangoes
+- Pesticide Load Score: 32/100
+- Food Compass 2.0 Score: 91/100 (exact match)
+- Total Tested Samples: 1,713 tests (2010-2024)
+- Benchmark Coverage: 80.7%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Thiabendazole (detected in 17.3% of samples), Acephate (detected in 0.2% of samples), Azoxystrobin (detected in 11.4% of samples), Acephate (detected in 0.1% of samples)
+
+### Mushrooms (vegetable)
+- URL: https://pesticideguide.online/food/mushrooms
+- Pesticide Load Score: 37/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 4,455 tests (2011-2024)
+- Benchmark Coverage: 73.3%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Thiabendazole (detected in 30.8% of samples), Thiabendazole (detected in 0.6% of samples), Piperonyl butoxide (detected in 2.9% of samples), Metrafenone (detected in 2.6% of samples)
+
+### Mustard Greens (vegetable)
+- URL: https://pesticideguide.online/food/mustard-greens
+- Pesticide Load Score: 78/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 595 tests (2019-2019)
+- Benchmark Coverage: 85.8%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Pyraclostrobin (detected in 35.8% of samples), Cyfluthrin (detected in 19.3% of samples), Cypermethrin (detected in 19.2% of samples), Acephate (detected in 0.2% of samples)
+
+### Nectarines (fruit)
+- URL: https://pesticideguide.online/food/nectarines
+- Pesticide Load Score: 85/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 3,616 tests (2007-2024)
+- Benchmark Coverage: 90.4%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Phosmet (detected in 13.9% of samples), Azinphos methyl (detected in 9.3% of samples), Formetanate hydrochloride (detected in 11.8% of samples), Iprodione (detected in 28.5% of samples)
+
+### Okra (vegetable)
+- URL: https://pesticideguide.online/food/okra
+- Pesticide Load Score: 88/100
+- Food Compass 2.0 Score: 100/100 (proxy match)
+- Total Tested Samples: 104 tests (2019-2022)
+- Benchmark Coverage: 76.9%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: acephate (detected in 1% of samples), methamidophos (detected in 1% of samples), imidacloprid (detected in 15.4% of samples), acetamiprid (detected in 6.7% of samples)
+
+### Onions (vegetable)
+- URL: https://pesticideguide.online/food/onions
+- Pesticide Load Score: 10/100
+- Food Compass 2.0 Score: 91/100 (exact match)
+- Total Tested Samples: 3,836 tests (2011-2024)
+- Benchmark Coverage: 73.3%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Acephate (detected in 0.2% of samples), Fosetyl-Al (sum of fosetyl, phosphonic acid and their salts, expressed as fosetyl) (detected in 1.4% of samples), Fluopyram (detected in 1.7% of samples), Chlorpropham (detected in 0.1% of samples)
+
+### Oranges (fruit)
+- URL: https://pesticideguide.online/food/oranges
+- Pesticide Load Score: 43/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 6,254 tests (2009-2024)
+- Benchmark Coverage: 84.1%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Phosmet (detected in 0.4% of samples), Imazalil (detected in 45.8% of samples), Imazalil (detected in 6.6% of samples), Pyrimethanil (detected in 8% of samples)
+
+### Papaya (fruit)
+- URL: https://pesticideguide.online/food/papaya
+- Pesticide Load Score: 7/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 972 tests (2011-2024)
+- Benchmark Coverage: 82.2%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Difenoconazole (detected in 3% of samples), Cyprodinil (detected in 1.6% of samples), Thiabendazole (detected in 2.7% of samples), Spiromesifen (detected in 0.5% of samples)
+
+### Peaches (fruit)
+- URL: https://pesticideguide.online/food/peaches
+- Pesticide Load Score: 84/100
+- Food Compass 2.0 Score: 96/100 (exact match)
+- Total Tested Samples: 3,035 tests (2013-2024)
+- Benchmark Coverage: 95%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Phosmet (detected in 5.8% of samples), Cyhalothrin, Total (Cyhalothrin-L + R157836 epimer) (detected in 13.4% of samples), Tebuconazole (detected in 16.5% of samples), Iprodione (detected in 13.7% of samples)
+
+### Pears (fruit)
+- URL: https://pesticideguide.online/food/pears
+- Pesticide Load Score: 56/100
+- Food Compass 2.0 Score: 84/100 (exact match)
+- Total Tested Samples: 6,115 tests (2010-2024)
+- Benchmark Coverage: 89.7%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Phosmet (detected in 0.8% of samples), Phosmet (detected in 0.9% of samples), Pyrimethanil (detected in 32.4% of samples), Captan (sum of captan and THPI, expressed as captan) (detected in 9.7% of samples)
+
+### Pineapple (fruit)
+- URL: https://pesticideguide.online/food/pineapple
+- Pesticide Load Score: 9/100
+- Food Compass 2.0 Score: 91/100 (exact match)
+- Total Tested Samples: 2,627 tests (2000-2024)
+- Benchmark Coverage: 71.6%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Fludioxonil (detected in 11.4% of samples), Fosetyl-Al (sum of fosetyl, phosphonic acid and their salts, expressed as fosetyl) (detected in 4.1% of samples), Ethephon (detected in 3.2% of samples), Acephate (detected in 0% of samples)
+
+### Pinto Beans (legume)
+- URL: https://pesticideguide.online/food/pinto-beans
+- Pesticide Load Score: 1/100
+- Food Compass 2.0 Score: 92/100 (exact match)
+- Total Tested Samples: 28 tests (2020-2024)
+- Benchmark Coverage: 71.4%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Fosetyl-Al (sum) (detected in 14.3% of samples), carbendazim (sum) (detected in 3.6% of samples)
+
+### Plums (fruit)
+- URL: https://pesticideguide.online/food/plums
+- Pesticide Load Score: 46/100
+- Food Compass 2.0 Score: 94/100 (exact match)
+- Total Tested Samples: 3,885 tests (2012-2024)
+- Benchmark Coverage: 92.4%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Iprodione (detected in 13.7% of samples), Phosmet (detected in 1.4% of samples), Fludioxonil (detected in 41.5% of samples), Tebuconazole (detected in 5.5% of samples)
+
+### Potatoes (vegetable)
+- URL: https://pesticideguide.online/food/potatoes
+- Pesticide Load Score: 97/100
+- Food Compass 2.0 Score: 57/100 (exact match)
+- Total Tested Samples: 5,153 tests (2015-2024)
+- Benchmark Coverage: 86.3%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Chlorpropham (detected in 51.9% of samples), Difenoconazole (detected in 6.2% of samples), Chlorpropham (detected in 4.2% of samples), Fipronil (detected in 0.7% of samples)
+
+### Prunes (fruit)
+- URL: https://pesticideguide.online/food/prunes
+- Pesticide Load Score: 34/100
+- Food Compass 2.0 Score: 82/100 (exact match)
+- Total Tested Samples: 1,137 tests (2005-2022)
+- Benchmark Coverage: 95.7%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Phosmet (detected in 0.4% of samples), Azinphos methyl (detected in 0.3% of samples), Fluopyram (detected in 1.7% of samples), Hexythiazox (detected in 5.1% of samples)
+
+### Radishes (vegetable)
+- URL: https://pesticideguide.online/food/radishes
+- Pesticide Load Score: 16/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 1,750 tests (2019-2024)
+- Benchmark Coverage: 56.7%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Methamidophos (detected in 0.1% of samples), Pyraclostrobin (detected in 5.8% of samples), Propamocarb (Sum of propamocarb and its salts, expressed as propamocarb) (detected in 1.9% of samples), Flonicamid (detected in 4.6% of samples)
+
+### Raisins (fruit)
+- URL: https://pesticideguide.online/food/raisins
+- Pesticide Load Score: 72/100
+- Food Compass 2.0 Score: 70/100 (exact match)
+- Total Tested Samples: 1,572 tests (2006-2020)
+- Benchmark Coverage: 98.3%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Phosmet (detected in 3.2% of samples), Pyraclostrobin (detected in 38.5% of samples), Fenpyroximate (detected in 17.7% of samples), Tebuconazole (detected in 30.2% of samples)
+
+### Raspberries (fruit)
+- URL: https://pesticideguide.online/food/raspberries
+- Pesticide Load Score: 40/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 1,103 tests (2013-2024)
+- Benchmark Coverage: 90.1%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Bifenazate (detected in 9.5% of samples), Cyprodinil (detected in 9.2% of samples), Cypermethrin (detected in 8.3% of samples), Pyraclostrobin (detected in 12.8% of samples)
+
+### Snap Peas (vegetable)
+- URL: https://pesticideguide.online/food/snap-peas
+- Pesticide Load Score: 71/100
+- Food Compass 2.0 Score: 100/100 (proxy match)
+- Total Tested Samples: 2,931 tests (2011-2020)
+- Benchmark Coverage: 72.1%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Dimethoate (detected in 21.3% of samples), Profenofos (detected in 1.6% of samples), Tebuconazole (detected in 10.5% of samples), Methamidophos (detected in 0.4% of samples)
+
+### Soybeans (legume)
+- URL: https://pesticideguide.online/food/soybeans
+- Pesticide Load Score: 0/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 3,088 tests (1998-2022)
+- Benchmark Coverage: 3.6%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Propetamphos (detected in 0.2% of samples), Pyraclostrobin (detected in 0.8% of samples), Tetraconazole (detected in 0% of samples), Methoxyfenozide (detected in 0.1% of samples)
+
+### Spinach (vegetable)
+- URL: https://pesticideguide.online/food/spinach
+- Pesticide Load Score: 79/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 4,144 tests (2006-2024)
+- Benchmark Coverage: 83.3%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Famoxadone (detected in 2.6% of samples), Cypermethrin (detected in 14.9% of samples), Permethrin Total (detected in 13.4% of samples), Mandipropamid (detected in 23.2% of samples)
+
+### Strawberries (fruit)
+- URL: https://pesticideguide.online/food/strawberries
+- Pesticide Load Score: 60/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 4,945 tests (2008-2024)
+- Benchmark Coverage: 85.1%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Captan (detected in 14.7% of samples), Pyraclostrobin (detected in 27.4% of samples), Bifenthrin (detected in 14.5% of samples), Cyprodinil (detected in 22.7% of samples)
+
+### Sweet Potatoes (vegetable)
+- URL: https://pesticideguide.online/food/sweet-potatoes
+- Pesticide Load Score: 57/100
+- Food Compass 2.0 Score: 78/100 (exact match)
+- Total Tested Samples: 3,243 tests (2009-2024)
+- Benchmark Coverage: 48.2%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Phosmet (detected in 0.5% of samples), Thiabendazole (detected in 6.7% of samples), Methamidophos (detected in 0.1% of samples), Fludioxonil (detected in 10.9% of samples)
+
+### Tangerines (fruit)
+- URL: https://pesticideguide.online/food/tangerines
+- Pesticide Load Score: 53/100
+- Food Compass 2.0 Score: 93/100 (exact match)
+- Total Tested Samples: 4,414 tests (2011-2024)
+- Benchmark Coverage: 83.5%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Imazalil (detected in 58.2% of samples), Phosmet (detected in 0.5% of samples), Thiabendazole (detected in 47.6% of samples), Pyrimethanil (detected in 8.7% of samples)
+
+### Tomatillos (vegetable)
+- URL: https://pesticideguide.online/food/tomatillos
+- Pesticide Load Score: 96/100
+- Food Compass 2.0 Score: 100/100 (proxy match)
+- Total Tested Samples: 854 tests (2023-2024)
+- Benchmark Coverage: 92.6%
+- Buying Recommendation: PRIORITIZE ORGANIC - Prioritize organic due to thin skin and higher detection risk.
+- Reason: Thin skin or high surface absorption makes pesticide residues difficult to wash off completely.
+- Top Chemical Residues: Acephate (detected in 9% of samples), Methamidophos (detected in 11.4% of samples), Profenofos (detected in 0.7% of samples), Tebuconazole (detected in 21.3% of samples)
+
+### Tomatoes (vegetable)
+- URL: https://pesticideguide.online/food/tomatoes
+- Pesticide Load Score: 38/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 5,288 tests (2014-2024)
+- Benchmark Coverage: 92.3%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Methamidophos (detected in 0.2% of samples), Acephate (detected in 0.1% of samples), Spiromesifen (detected in 2.3% of samples), Famoxadone (detected in 2.2% of samples)
+
+### Watermelon (fruit)
+- URL: https://pesticideguide.online/food/watermelon
+- Pesticide Load Score: 47/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 2,546 tests (2014-2024)
+- Benchmark Coverage: 86%
+- Buying Recommendation: CONVENTIONAL WITH WASHING - Conventional is acceptable; wash with baking soda to lower residue.
+- Reason: Moderate residue penetration. A 1% baking soda soak significantly reduces chemical exposure.
+- Top Chemical Residues: Acephate (detected in 0.4% of samples), Methamidophos (detected in 0.5% of samples), Imidacloprid (detected in 10.2% of samples), Thiamethoxam (detected in 5.4% of samples)
+
+### Zucchini (vegetable)
+- URL: https://pesticideguide.online/food/zucchini
+- Pesticide Load Score: 24/100
+- Food Compass 2.0 Score: 100/100 (exact match)
+- Total Tested Samples: 4,206 tests (2013-2024)
+- Benchmark Coverage: 71.9%
+- Buying Recommendation: BUY CONVENTIONAL - Conventional is safe; thick skin minimizes residue exposure.
+- Reason: Thick peel or outer husk naturally blocks chemical absorption.
+- Top Chemical Residues: Imidacloprid (detected in 16.4% of samples), Thiamethoxam (detected in 11.8% of samples), Acephate (detected in 0.1% of samples), Fluopyram (detected in 3% of samples)
+
+## Official Data Sources
+- [Canada] CFIA National Chemical Residue Monitoring Program: https://open.canada.ca/data/en/dataset/cf149850-4dcd-4ee3-8197-7132291b7962
+- [France] EFSA chemical monitoring — France: https://zenodo.org/records/20034822
+- [Germany] EFSA chemical monitoring — Germany: https://zenodo.org/records/20034938
+- [Germany · Non-organic] EFSA chemical monitoring — Germany — Non-organic: https://zenodo.org/records/20034938
+- [Germany · Organic] EFSA chemical monitoring — Germany — Organic: https://zenodo.org/records/20034938
+- [Italy] EFSA chemical monitoring — Italy: https://zenodo.org/records/20035740
+- [Portugal] EFSA chemical monitoring — Portugal: https://zenodo.org/records/20036007
+- [Spain] EFSA chemical monitoring — Spain: https://zenodo.org/records/20036085
+- [Taiwan] Taiwan FDA fruit and vegetable monitoring: https://data.gov.tw/en/datasets/8935
+- [United Kingdom] UK Pesticide Residues in Food programme: https://www.data.gov.uk/dataset/5d5028ef-9918-4ab7-8755-81f3ad06f308/pesticide-residues-in-food
+- [United States] USDA Pesticide Data Program: https://www.ams.usda.gov/datasets/pdp/pdpdata
+- [United States · Non-organic] California DPR Pesticide Residue Monitoring Program — Non-organic: https://www.cdpr.ca.gov/residue-monitoring-program/
+- [United States · Organic] California DPR Pesticide Residue Monitoring Program — Organic: https://www.cdpr.ca.gov/residue-monitoring-program/
+
+## Contact & Attribution
+- Project Website: https://pesticideguide.online
+- Contact Email: contact@pesticideguide.online
+- License: https://pesticideguide.online/terms#data-license

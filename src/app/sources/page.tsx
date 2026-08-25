@@ -13,6 +13,22 @@ export const metadata: Metadata = {
   description:
     "Inspect official government pesticide residue monitoring databases behind Pesticide Guide, including USDA PDP, EFSA, UK PRiF, CFIA, and Taiwan FDA records.",
   alternates: { canonical: "/sources" },
+  openGraph: {
+    title: "Official Pesticide Data Sources & Laboratory Registries",
+    description:
+      "Inspect official government pesticide residue monitoring databases behind Pesticide Guide, including USDA PDP, EFSA, UK PRiF, CFIA, and Taiwan FDA records.",
+    url: `${siteConfig.url}/sources`,
+    siteName: siteConfig.name,
+    images: [{ url: "/og-card.jpg", width: 1200, height: 800 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Official Pesticide Data Sources & Laboratory Registries",
+    description:
+      "Inspect official government pesticide residue monitoring databases behind Pesticide Guide, including USDA PDP, EFSA, UK PRiF, CFIA, and Taiwan FDA records.",
+    images: ["/og-card.jpg"],
+  },
 };
 
 export default function SourcesPage() {

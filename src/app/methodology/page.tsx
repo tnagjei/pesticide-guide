@@ -14,6 +14,22 @@ export const metadata: Metadata = {
   description:
     "Discover how Pesticide Guide calculates relative residue load scores, maps Food Compass nutrition, and evaluates laboratory sample confidence across 9 markets.",
   alternates: { canonical: "/methodology" },
+  openGraph: {
+    title: "Pesticide Scoring Methodology & Toxicological Guide",
+    description:
+      "Discover how Pesticide Guide calculates relative residue load scores, maps Food Compass nutrition, and evaluates laboratory sample confidence across 9 markets.",
+    url: `${siteConfig.url}/methodology`,
+    siteName: siteConfig.name,
+    images: [{ url: "/og-card.jpg", width: 1200, height: 800 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pesticide Scoring Methodology & Toxicological Guide",
+    description:
+      "Discover how Pesticide Guide calculates relative residue load scores, maps Food Compass nutrition, and evaluates laboratory sample confidence across 9 markets.",
+    images: ["/og-card.jpg"],
+  },
 };
 
 export default function MethodologyPage() {

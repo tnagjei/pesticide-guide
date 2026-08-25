@@ -3,6 +3,7 @@
 // pos: 网站品牌与可信度介绍落地页（更新规则：文件变更需同步本注释与所属目录 README）
 
 import type { Metadata } from "next";
+import Link from "next/link";
 import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
@@ -12,6 +13,22 @@ export const metadata: Metadata = {
   description:
     "Learn how Pesticide Guide translates 184,000+ public chemical lab tests into produce safety profiles, nutrition scores, and smart grocery shopping guides.",
   alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About Pesticide Guide | Produce Safety & Data Mission",
+    description:
+      "Learn how Pesticide Guide translates 184,000+ public chemical lab tests into produce safety profiles, nutrition scores, and smart grocery shopping guides.",
+    url: `${siteConfig.url}/about`,
+    siteName: siteConfig.name,
+    images: [{ url: "/og-card.jpg", width: 1200, height: 800 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Pesticide Guide | Produce Safety & Data Mission",
+    description:
+      "Learn how Pesticide Guide translates 184,000+ public chemical lab tests into produce safety profiles, nutrition scores, and smart grocery shopping guides.",
+    images: ["/og-card.jpg"],
+  },
 };
 
 export default function AboutPage() {
@@ -43,15 +60,15 @@ export default function AboutPage() {
         <h1>A clearer way to inspect produce monitoring data</h1>
         <p>
           Pesticide Guide turns dense public records into food profiles,
-          cross-market comparisons and an interactive field map.
+          cross-market comparisons and an <Link href="/#explorer">interactive 2D food map</Link>.
         </p>
       </header>
       <section>
         <h2>What this site is for</h2>
         <p>
           Most residue datasets are organised for analysts, not shoppers. This
-          site keeps the underlying sources visible while making the comparison
-          layer easier to browse.
+          site keeps the <Link href="/sources">underlying sources</Link> visible while making the comparison
+          layer easier to browse. Review our <Link href="/methodology">calculation methodology</Link> to understand our data model.
         </p>
       </section>
       <section>

@@ -12,6 +12,22 @@ export const metadata: Metadata = {
   description:
     "Review the Privacy Policy for Pesticide Guide. Learn how we handle aggregated technical usage metrics, ensure GDPR/CCPA compliance, and protect visitor privacy.",
   alternates: { canonical: "/privacy" },
+  openGraph: {
+    title: "Privacy Policy & Data Protection | Pesticide Guide",
+    description:
+      "Review the Privacy Policy for Pesticide Guide. Learn how we handle aggregated technical usage metrics, ensure GDPR/CCPA compliance, and protect visitor privacy.",
+    url: `${siteConfig.url}/privacy`,
+    siteName: siteConfig.name,
+    images: [{ url: "/og-card.jpg", width: 1200, height: 800 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy & Data Protection | Pesticide Guide",
+    description:
+      "Review the Privacy Policy for Pesticide Guide. Learn how we handle aggregated technical usage metrics, ensure GDPR/CCPA compliance, and protect visitor privacy.",
+    images: ["/og-card.jpg"],
+  },
 };
 
 export default function PrivacyPage() {

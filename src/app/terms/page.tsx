@@ -13,6 +13,22 @@ export const metadata: Metadata = {
   description:
     "Read the Terms of Service and data licensing conditions for Pesticide Guide. Understand acceptable use, intellectual property rights, and public data terms.",
   alternates: { canonical: "/terms" },
+  openGraph: {
+    title: "Terms of Service & Data Licensing | Pesticide Guide",
+    description:
+      "Read the Terms of Service and data licensing conditions for Pesticide Guide. Understand acceptable use, intellectual property rights, and public data terms.",
+    url: `${siteConfig.url}/terms`,
+    siteName: siteConfig.name,
+    images: [{ url: "/og-card.jpg", width: 1200, height: 800 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service & Data Licensing | Pesticide Guide",
+    description:
+      "Read the Terms of Service and data licensing conditions for Pesticide Guide. Understand acceptable use, intellectual property rights, and public data terms.",
+    images: ["/og-card.jpg"],
+  },
 };
 
 export default function TermsPage() {

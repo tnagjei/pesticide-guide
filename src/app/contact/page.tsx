@@ -13,6 +13,22 @@ export const metadata: Metadata = {
   description:
     "Contact the Pesticide Guide research team for dataset corrections, agricultural citations, scientific feedback, and general consumer safety inquiries.",
   alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact Pesticide Guide | Data Feedback & Editorial",
+    description:
+      "Contact the Pesticide Guide research team for dataset corrections, agricultural citations, scientific feedback, and general consumer safety inquiries.",
+    url: `${siteConfig.url}/contact`,
+    siteName: siteConfig.name,
+    images: [{ url: "/og-card.jpg", width: 1200, height: 800 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Pesticide Guide | Data Feedback & Editorial",
+    description:
+      "Contact the Pesticide Guide research team for dataset corrections, agricultural citations, scientific feedback, and general consumer safety inquiries.",
+    images: ["/og-card.jpg"],
+  },
 };
 
 export default function ContactPage() {

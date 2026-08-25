@@ -35,6 +35,14 @@ export function FoodExplorer({ foods, markets }: FoodExplorerProps) {
   const dataKey = mode?.dataKey ?? marketId;
 
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q") ?? params.get("search");
+    if (q) {
+      setQuery(q);
+    }
+  }, []);
+
+  useEffect(() => {
     setSelectedCode(null);
   }, [dataKey]);
 
