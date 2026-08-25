@@ -12,7 +12,11 @@
 ## 公开站点
 
 - 首页、`/sources`、`/privacy`、`/robots.txt`、`/sitemap.xml`：HTTP 200。
-- 线上 sitemap：77 个 `<loc>`。
+- 线上 sitemap：77 个 `<loc>`；HTTP 200；SHA-256 `f8b39b3cbfced389e1153be6492530698e42246bd812ad97f7b744e5eac2d577`，2026-08-24T10:01:49Z。
+- 线上 sitemap 的完整 URL 清单：见 `journal/2026-08-24-sitemap-status.md`。
+- IndexNow key：HTTP 200；线上与本地原始字节一致，SHA-256 `93735e772dbfc7ee12ee74eaa1a5e51264050c569522c6773a0060bedd14fe0c`，2026-08-24T10:01:49Z。
+- GSC sitemap：1 条，path 为线上 sitemap；lastDownloaded=`2026-08-24T09:47:22.285Z`，isPending=false，errors=0，warnings=0。
+- Bing Webmaster sitemap：无法验证；浏览器扩展未连接且未配置 Bing API key。
 - 首页包含 title、description、canonical、GA4/Tag Manager、Yandex verification 和 JSON-LD。
 
 ## 本地项目

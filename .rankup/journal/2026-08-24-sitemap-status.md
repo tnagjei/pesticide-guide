@@ -1,0 +1,89 @@
+# 2026-08-24
+
+## 10:01:49 UTC：线上 sitemap、IndexNow 与站长工具状态核验
+
+- 目标：只读核对线上 sitemap 完整 URL、IndexNow key、GSC sitemap 和 Bing Webmaster sitemap。
+- 操作：读取线上 XML、读取线上 key、比较本地 key 原始字节；调用 GSC `sitemaps.list`；调用 Rankup Webmaster status 脚本；未调用 submit。
+- 结果：sitemap HTTP 200，共 77 个 URL；IndexNow key HTTP 200，线上与本地 33 字节完全一致；GSC 返回 1 条 sitemap，抓取时间为 `2026-08-24T09:47:22.285Z`，错误 0、警告 0；Bing 无法验证。
+- 证据：线上 sitemap SHA-256 `f8b39b3cbfced389e1153be6492530698e42246bd812ad97f7b744e5eac2d577`；IndexNow key SHA-256 `93735e772dbfc7ee12ee74eaa1a5e51264050c569522c6773a0060bedd14fe0c`。
+- 当前 URL 清单：
+
+  - https://pesticideguide.online
+  - https://pesticideguide.online/methodology
+  - https://pesticideguide.online/sources
+  - https://pesticideguide.online/about
+  - https://pesticideguide.online/disclaimer
+  - https://pesticideguide.online/privacy
+  - https://pesticideguide.online/terms
+  - https://pesticideguide.online/contact
+  - https://pesticideguide.online/food/apples
+  - https://pesticideguide.online/food/apricots
+  - https://pesticideguide.online/food/asparagus
+  - https://pesticideguide.online/food/avocado
+  - https://pesticideguide.online/food/bananas
+  - https://pesticideguide.online/food/basil
+  - https://pesticideguide.online/food/beets
+  - https://pesticideguide.online/food/bell-peppers
+  - https://pesticideguide.online/food/black-beans
+  - https://pesticideguide.online/food/blackberries
+  - https://pesticideguide.online/food/blueberries
+  - https://pesticideguide.online/food/broccoli
+  - https://pesticideguide.online/food/brussels-sprouts
+  - https://pesticideguide.online/food/cabbage
+  - https://pesticideguide.online/food/cantaloupe
+  - https://pesticideguide.online/food/carrots
+  - https://pesticideguide.online/food/cauliflower
+  - https://pesticideguide.online/food/celery
+  - https://pesticideguide.online/food/cherries
+  - https://pesticideguide.online/food/cherry-tomatoes
+  - https://pesticideguide.online/food/chickpeas
+  - https://pesticideguide.online/food/cilantro
+  - https://pesticideguide.online/food/collard-greens
+  - https://pesticideguide.online/food/corn
+  - https://pesticideguide.online/food/cranberries
+  - https://pesticideguide.online/food/cucumbers
+  - https://pesticideguide.online/food/eggplant
+  - https://pesticideguide.online/food/garlic
+  - https://pesticideguide.online/food/grapefruit
+  - https://pesticideguide.online/food/grapes
+  - https://pesticideguide.online/food/green-beans
+  - https://pesticideguide.online/food/green-onions
+  - https://pesticideguide.online/food/green-peas
+  - https://pesticideguide.online/food/hot-peppers
+  - https://pesticideguide.online/food/kale
+  - https://pesticideguide.online/food/kidney-beans
+  - https://pesticideguide.online/food/kiwi
+  - https://pesticideguide.online/food/lemons
+  - https://pesticideguide.online/food/lentils
+  - https://pesticideguide.online/food/lettuce
+  - https://pesticideguide.online/food/limes
+  - https://pesticideguide.online/food/mangoes
+  - https://pesticideguide.online/food/mushrooms
+  - https://pesticideguide.online/food/mustard-greens
+  - https://pesticideguide.online/food/nectarines
+  - https://pesticideguide.online/food/okra
+  - https://pesticideguide.online/food/onions
+  - https://pesticideguide.online/food/oranges
+  - https://pesticideguide.online/food/papaya
+  - https://pesticideguide.online/food/peaches
+  - https://pesticideguide.online/food/pears
+  - https://pesticideguide.online/food/pineapple
+  - https://pesticideguide.online/food/pinto-beans
+  - https://pesticideguide.online/food/plums
+  - https://pesticideguide.online/food/potatoes
+  - https://pesticideguide.online/food/prunes
+  - https://pesticideguide.online/food/radishes
+  - https://pesticideguide.online/food/raisins
+  - https://pesticideguide.online/food/raspberries
+  - https://pesticideguide.online/food/snap-peas
+  - https://pesticideguide.online/food/soybeans
+  - https://pesticideguide.online/food/spinach
+  - https://pesticideguide.online/food/strawberries
+  - https://pesticideguide.online/food/sweet-potatoes
+  - https://pesticideguide.online/food/tangerines
+  - https://pesticideguide.online/food/tomatillos
+  - https://pesticideguide.online/food/tomatoes
+  - https://pesticideguide.online/food/watermelon
+  - https://pesticideguide.online/food/zucchini
+- 无法验证：Bing Webmaster 当前 sitemap 列表；浏览器扩展未连接，API key 不存在。
+- 决定：保留 Bing 为待验证，不重新提交；GSC 和 IndexNow 状态按当前回读更新。
