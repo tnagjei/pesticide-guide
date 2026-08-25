@@ -4,17 +4,40 @@
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Terms of Service",
+  title: {
+    absolute: "Terms of Service & Data Licensing | Pesticide Guide",
+  },
   description:
-    "Terms of Service and legal conditions for accessing Pesticide Guide.",
+    "Read the Terms of Service and data licensing conditions for Pesticide Guide. Understand acceptable use, intellectual property rights, and public data terms.",
   alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {
+  const termsSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Terms of Service",
+    url: `${siteConfig.url}/terms`,
+    description:
+      "Read the Terms of Service and data licensing conditions for Pesticide Guide. Understand acceptable use, intellectual property rights, and public data terms.",
+    isPartOf: {
+      "@type": "WebSite",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+  };
+
   return (
     <main className="content-page prose-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(termsSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <header>
         <p className="eyebrow">Legal & Terms</p>
         <h1>Terms of Service</h1>
@@ -79,7 +102,7 @@ export default function TermsPage() {
         <h2>7. Contact and Inquiries</h2>
         <p>
           For legal notices or questions regarding these terms, contact us at:{" "}
-          <a href="mailto:contact@pesticideguide.online">contact@pesticideguide.online</a>.
+          <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>.
         </p>
       </section>
     </main>

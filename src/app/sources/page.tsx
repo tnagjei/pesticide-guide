@@ -4,11 +4,14 @@
 
 import type { Metadata } from "next";
 import { getSnapshot, getSourceGroups } from "@/lib/data";
+import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Data Sources",
+  title: {
+    absolute: "Official Pesticide Data Sources & Laboratory Registries",
+  },
   description:
-    "Official pesticide monitoring and nutrition sources used by Pesticide Guide.",
+    "Inspect official government pesticide residue monitoring databases behind Pesticide Guide, including USDA PDP, EFSA, UK PRiF, CFIA, and Taiwan FDA records.",
   alternates: { canonical: "/sources" },
 };
 
@@ -22,8 +25,13 @@ export default function SourcesPage() {
     description:
       "A food-level comparison snapshot derived from public pesticide monitoring records and Food Compass 2.0.",
     dateModified: meta.generatedAt,
-    license: "https://pesticideguide.online/terms#data-license",
-    url: "https://pesticideguide.online/sources",
+    license: `${siteConfig.url}/terms#data-license`,
+    url: `${siteConfig.url}/sources`,
+    creator: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
     variableMeasured: [
       "Sample count",
       "Pesticide detection rate",

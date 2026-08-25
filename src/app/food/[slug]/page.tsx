@@ -27,17 +27,32 @@ export async function generateMetadata({
   const food = getFoodBySlug((await params).slug);
   if (!food) return {};
 
- const verdict = buyingVerdict(food);
+  const title =
+    food.name.length > 12
+      ? `${food.name} Pesticide Residue & Buying Guide (2026)`
+      : `${food.name} Pesticide Residue & Organic Buying Guide (2026)`;
 
- return {
+  const rec =
+    food.score >= 70
+      ? "Prioritize organic due to thin skin and residue."
+      : food.score >= 40
+        ? "Conventional is fine; wash well to lower residue."
+        : "Conventional is safe; thick peel minimizes residue.";
+
+  let desc = `Official lab data for ${food.name.toLowerCase()}: pesticide load ${food.score}/100 (${food.samples.toLocaleString("en-US")} tests). ${rec} View chemicals and washing tips.`;
+  if (desc.length < 140) {
+    desc = `Official lab data for ${food.name.toLowerCase()}: pesticide residue load ${food.score}/100 (${food.samples.toLocaleString("en-US")} tests). ${rec} View chemicals and washing tips.`;
+  }
+
+  return {
     title: {
-      absolute: `${food.name} Pesticide Residue & Buying Guide (2026)`,
+      absolute: title,
     },
-    description: `Official lab data for ${food.name.toLowerCase()}: pesticide score ${food.score}/100. ${verdict.recommendation} See tested chemicals and washing steps.`,
+    description: desc,
     alternates: { canonical: `/food/${slugifyFood(food.name)}` },
     openGraph: {
       title: `${food.name} Pesticide Residue & Nutrition Data`,
-      description: foodDescription(food),
+      description: desc,
       images: ["/og-card.jpg"],
     },
   };

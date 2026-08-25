@@ -3,18 +3,18 @@
 
 Pesticide Guide translates dense government chemical testing records into actionable, transparent consumer guides, helping shoppers decide when to buy organic and how to scientifically wash produce.
 
-## 核心内容
+## Core Content
 - [Food Map](https://pesticideguide.online/#explorer): Interactive 2D coordinate chart plotting 69 produce items by pesticide residue load and longevity nutrition.
 - [Produce Directory](https://pesticideguide.online/#food-index): Full directory of 69 fruit and vegetable profiles with chemical breakdown and market comparison.
 - [Shopper's Guide](https://pesticideguide.online/#guide): Scientific advice on prioritizing organic for thin-skinned crops and saving money on thick-skinned produce.
 
-## 常用资源
+## Key Resources
 - [Methodology](https://pesticideguide.online/methodology): Detailed mathematical and toxicological calculation methodology.
 - [Official Sources](https://pesticideguide.online/sources): Verified direct links to government chemical monitoring databases.
 - [Disclaimer](https://pesticideguide.online/disclaimer): Data limitations, sample size notes, and non-medical advice disclosures.
- - [Privacy Policy](https://pesticideguide.online/privacy): User privacy protection and GDPR/CCPA compliance terms.
- - [Terms of Service](https://pesticideguide.online/terms): Educational platform terms of use and data rights.
- - [Contact](https://pesticideguide.online/contact): Editorial feedback and official dataset correction inquiries.
+- [Privacy Policy](https://pesticideguide.online/privacy): User privacy protection and GDPR/CCPA compliance terms.
+- [Terms of Service](https://pesticideguide.online/terms): Educational platform terms of use and data rights.
+- [Contact](https://pesticideguide.online/contact): Editorial feedback and official dataset correction inquiries.
 
-## 联系方式
-- Contact: contact@pesticideguide.online
+## Contact Information
+- Email: contact@pesticideguide.online

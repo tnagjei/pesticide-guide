@@ -6,28 +6,26 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { MakeThisBetterWidget } from "@/components/MakeThisBetterWidget";
+import { siteConfig } from "@/lib/siteConfig";
 import "./globals.css";
 
-const siteUrl = "https://pesticideguide.online";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Produce Pesticide Guide | 2026 Residue Load & Organic Buying Data",
+    default: siteConfig.defaultTitle,
     template: "%s | Pesticide Guide",
   },
-  description:
-    "Compare 69 fruits, vegetables, and legumes using 184,000+ official pesticide residue lab tests (USDA, EFSA) and Food Compass 2.0 nutrition scores.",
+  description: siteConfig.defaultDescription,
   other: {
-    "yandex-verification": "699bc0992432499d",
+    "yandex-verification": siteConfig.yandexVerification,
   },
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Pesticide Guide - Compare Produce by Pesticide Load",
+    title: siteConfig.defaultTitle,
     description:
       "Explore 69 fruits, vegetables and legumes across 9 international markets using official USDA, EFSA and CFIA laboratory pesticide monitoring records.",
-    url: siteUrl,
-    siteName: "Pesticide Guide",
+    url: siteConfig.url,
+    siteName: siteConfig.name,
     images: [{ url: "/og-card.jpg", width: 1200, height: 800 }],
     type: "website",
   },
@@ -66,11 +64,11 @@ export default function RootLayout({
            <strong>Pesticide Guide</strong>
            <p>Public monitoring data, made easier to inspect.</p>
            <p style={{ fontSize: "12px", opacity: 0.6, marginTop: "6px" }}>
-              © {new Date().getFullYear()} Pesticide Guide · Contact:{" "}
-              <a href="mailto:contact@pesticideguide.online" style={{ color: "inherit", textDecoration: "underline" }}>
-                contact@pesticideguide.online
+              © {new Date().getFullYear()} {siteConfig.copyrightOwner} · Contact:{" "}
+              <a href={`mailto:${siteConfig.contactEmail}`} style={{ color: "inherit", textDecoration: "underline" }}>
+                {siteConfig.contactEmail}
               </a>
-           </p>
+            </p>
          </div>
          <nav aria-label="Footer navigation">
            <Link href="/methodology">Methodology</Link>
@@ -86,7 +84,7 @@ export default function RootLayout({
          </nav>
        </footer>
       </body>
-      <GoogleAnalytics gaId="G-CHT0MX5QK1" />
+      <GoogleAnalytics gaId={siteConfig.gaId} />
     </html>
   );
 }

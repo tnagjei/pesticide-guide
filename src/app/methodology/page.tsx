@@ -1,19 +1,53 @@
+// input: getSnapshot()
+// output: 网站方法论与评分标准页面（相对农残负荷、营养指数与置信度算法，含 TechArticle 结构化数据）
+// pos: 算法透明度与学术背书核心落地页（更新规则：文件变更需同步本注释与所属目录 README）
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getSnapshot } from "@/lib/data";
+import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Methodology",
+  title: {
+    absolute: "Pesticide Scoring Methodology & Toxicological Guide",
+  },
   description:
-    "How Pesticide Guide compares pesticide monitoring data, Food Compass 2.0 scores and evidence quality.",
+    "Discover how Pesticide Guide calculates relative residue load scores, maps Food Compass nutrition, and evaluates laboratory sample confidence across 9 markets.",
   alternates: { canonical: "/methodology" },
 };
 
 export default function MethodologyPage() {
   const { meta } = getSnapshot();
 
+  const methodologySchema = {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    headline: "Pesticide Scoring Methodology & Toxicological Guide",
+    url: `${siteConfig.url}/methodology`,
+    description:
+      "Discover how Pesticide Guide calculates relative residue load scores, maps Food Compass nutrition, and evaluates laboratory sample confidence across 9 markets.",
+    datePublished: "2026-08-20",
+    dateModified: meta.generatedAt,
+    author: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+  };
+
   return (
     <main className="content-page prose-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(methodologySchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <header>
         <p className="eyebrow">Methods · version {meta.generatedAt}</p>
         <h1>How the guide turns monitoring records into a map</h1>

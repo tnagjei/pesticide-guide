@@ -1,3 +1,7 @@
+// input: src/lib/data.ts
+// output: 数据访问层与 69 种果蔬数据快照的自动化单元测试
+// pos: 测试用例集（更新规则：文件变更需同步本注释与所属目录 README）
+
 import { describe, expect, it } from "vitest";
 import {
   getAllFoods,

@@ -4,17 +4,41 @@
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: {
+    absolute: "Contact Pesticide Guide | Data Feedback & Editorial",
+  },
   description:
-    "Contact the Pesticide Guide editorial and scientific data team.",
+    "Contact the Pesticide Guide research team for dataset corrections, agricultural citations, scientific feedback, and general consumer safety inquiries.",
   alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact Pesticide Guide",
+    url: `${siteConfig.url}/contact`,
+    description:
+      "Contact the Pesticide Guide research team for dataset corrections, agricultural citations, scientific feedback, and general consumer safety inquiries.",
+    mainEntity: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+      email: siteConfig.contactEmail,
+    },
+  };
+
   return (
     <main className="content-page prose-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(contactSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <header>
         <p className="eyebrow">Get in touch</p>
         <h1>Contact & Feedback</h1>
@@ -29,7 +53,7 @@ export default function ContactPage() {
           If you are an agricultural researcher, laboratory analyst, or consumer who noticed an anomaly in our data mappings, please email our lead research inbox:
         </p>
         <p style={{ fontSize: "1.2rem", fontWeight: "600" }}>
-          <a href="mailto:contact@pesticideguide.online">contact@pesticideguide.online</a>
+          <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>
         </p>
         <p>
           We aim to review and verify all public dataset discrepancies within 2 business days.

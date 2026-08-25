@@ -1,8 +1,13 @@
+// input: getAllFoods()
+// output: 网站 sitemap.xml 索引数据
+// pos: 搜索引擎站点地图生成入口（更新规则：文件变更需同步本注释与所属目录 README）
+
 import type { MetadataRoute } from "next";
 import { getAllFoods } from "@/lib/data";
 import { slugifyFood } from "@/lib/food";
+import { siteConfig } from "@/lib/siteConfig";
 
-const baseUrl = "https://pesticideguide.online";
+const baseUrl = siteConfig.url;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["", "/methodology", "/sources", "/about", "/disclaimer", "/privacy", "/terms", "/contact"];

@@ -3,17 +3,40 @@
 // pos: 网站法律合规与搜索引擎信任背书核心单页（更新规则：文件变更需同步本注释与所属目录 README）
 
 import type { Metadata } from "next";
+import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
+  title: {
+    absolute: "Privacy Policy & Data Protection | Pesticide Guide",
+  },
   description:
-    "Privacy Policy and data protection practices for Pesticide Guide users.",
+    "Review the Privacy Policy for Pesticide Guide. Learn how we handle aggregated technical usage metrics, ensure GDPR/CCPA compliance, and protect visitor privacy.",
   alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {
+  const privacySchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Privacy Policy",
+    url: `${siteConfig.url}/privacy`,
+    description:
+      "Review the Privacy Policy for Pesticide Guide. Learn how we handle aggregated technical usage metrics, ensure GDPR/CCPA compliance, and protect visitor privacy.",
+    isPartOf: {
+      "@type": "WebSite",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+  };
+
   return (
     <main className="content-page prose-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(privacySchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <header>
         <p className="eyebrow">Legal & Compliance</p>
         <h1>Privacy Policy</h1>
@@ -62,7 +85,7 @@ export default function PrivacyPage() {
         <h2>6. Contact Regarding Privacy</h2>
         <p>
           If you have questions or data rights requests, please contact our data privacy officer at:{" "}
-          <a href="mailto:contact@pesticideguide.online">contact@pesticideguide.online</a>.
+          <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>.
         </p>
       </section>
     </main>

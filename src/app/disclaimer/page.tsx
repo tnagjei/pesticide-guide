@@ -1,14 +1,42 @@
+// input: 无
+// output: 网站免责声明页面（非医疗建议、数据局限性与来源变动说明，含 WebPage 结构化数据）
+// pos: 网站合规声明与风险告知落地页（更新规则：文件变更需同步本注释与所属目录 README）
+
 import type { Metadata } from "next";
+import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Data and Health Disclaimer",
-  description: "Important limitations for using Pesticide Guide.",
+  title: {
+    absolute: "Data & Health Disclaimer | Pesticide Guide Research",
+  },
+  description:
+    "Read the medical and dietary disclaimer for Pesticide Guide. Understand data sampling boundaries, testing limits, and non-medical consumer guidance terms.",
   alternates: { canonical: "/disclaimer" },
 };
 
 export default function DisclaimerPage() {
+  const disclaimerSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Data and Health Disclaimer",
+    url: `${siteConfig.url}/disclaimer`,
+    description:
+      "Read the medical and dietary disclaimer for Pesticide Guide. Understand data sampling boundaries, testing limits, and non-medical consumer guidance terms.",
+    isPartOf: {
+      "@type": "WebSite",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+  };
+
   return (
     <main className="content-page prose-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(disclaimerSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <header>
         <p className="eyebrow">Use with context</p>
         <h1>Data and health disclaimer</h1>
